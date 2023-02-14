@@ -89,17 +89,25 @@
     <link href="features.css" rel="stylesheet">
   </head>
   <body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="question-circle" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+  </symbol>
+</svg>
+
     <div class="b-example-divider"></div>
     <div class="container px-4 py-5">
        <div class="dropdown-menu position-static d-flex align-items-stretch p-3 rounded-3 shadow-lg w-600px">
           <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-2 py-1">
              <a href="#first_access" class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start">
                 <svg class="bi" width="32" height="32">
-                   <use xlink:href="#image-fill"/>
+                   <use xlink:href="#question-circle"/>
                 </svg>
                 <div>
-                   <strong class="d-block">Features</strong>
-                   <small>Take a tour through the product</small>
+                   <strong class="d-block">Primeiro Contato</strong>
+                   <small>Abri a App pela primeira vez</small>
                 </div>
              </a>
 
@@ -156,21 +164,23 @@
        </div>
     </div>
     <div class="b-example-divider"></div>
+    <!-- first_access -->
+    <div style="height: 750px; background-color: rgba(0,0,0,0);">
+      <div class="container-sm px-4 py-5" id="first_access">
+         <h2 class="pb-2 border-bottom">Primeiro Contato</h2>
 
-    <div class="container px-4 py-5" id="first_access">
-       <h2 class="pb-2 border-bottom">Features with title</h2>
-       <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-          <div class="col d-flex flex-column align-items-start gap-2">
-             <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-             <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-             <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-          </div>
-          <div class="col d-flex flex-column align-items-start gap-2">
-             <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-             <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-             <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-          </div>
-       </div>
+         <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-2 align-top">
+            <div class="col d-flex flex-column align-items-start gap-2 vh-100" >
+               <img src="./appimg/first_access.png" class="img-thumbnail" alt="Primeiro Acesso">
+            </div>
+
+
+            <div class="col d-flex flex-column align-items-start gap-2 align-top h-100 d-inline-block vh-100">
+               <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
+               <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            </div>
+         </div>
+      </div>
     </div>
 
     <div class="b-example-divider"></div>
