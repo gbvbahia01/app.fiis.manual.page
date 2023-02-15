@@ -1,236 +1,215 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="" name="description">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link href="./assets/favicon/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
+    <link href="./assets/favicon/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
+    <link href="./assets/favicon/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+    <link href="./assets/favicon/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+    <link href="./assets/favicon/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+    <link href="./assets/favicon/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="./assets/favicon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+    <link href="./assets/favicon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+    <link href="./assets/favicon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="./assets/favicon/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
+    <link href="./assets/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="./assets/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
+    <link href="./assets/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+    <link href="./assets/favicon/manifest.json" rel="manifest">
+    <meta content="#ffffff" name="msapplication-TileColor">
+    <meta content="./assets/favicon/ms-icon-144x144.png" name="msapplication-TileImage">
+    <meta content="#ffffff" name="theme-color">
 
     <title>App FIIS</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/features/">
+    <link href="https://getbootstrap.com/docs/5.3/examples/features/" rel="canonical">
 
 
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-      }
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+        .divider-gray {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
     </style>
-
 
     <!-- Custom styles for this template -->
     <link href="features.css" rel="stylesheet">
-  </head>
-  <body>
+    <script src="https://kit.fontawesome.com/2d4c97df86.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-  <symbol id="question-circle" viewBox="0 0 16 16">
-    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-    <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-  </symbol>
-
-  <symbol id="plus" viewBox="0 0 16 16">
-    <path d="M13.5 3C13.5 2.44772 13.0523 2 12.5 2H11.5C10.9477 2 10.5 2.44772 10.5 3V10.5H3C2.44772 10.5 2 10.9477 2 11.5V12.5C2 13.0523 2.44772 13.5 3 13.5H10.5V21C10.5 21.5523 10.9477 22 11.5 22H12.5C13.0523 22 13.5 21.5523 13.5 21V13.5H21C21.5523 13.5 22 13.0523 22 12.5V11.5C22 10.9477 21.5523 10.5 21 10.5H13.5V3Z" fill="#000000"/>
-  </symbol>
-</svg>
-
-    <div class="b-example-divider"></div>
-    <div class="container px-4 py-5">
-       <div class="dropdown-menu position-static d-flex align-items-stretch p-3 rounded-3 shadow-lg w-600px">
-          <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-2 py-1">
-             <a href="#first_access" class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start">
-                <svg class="bi" width="32" height="32">
-                   <use xlink:href="#question-circle"/>
-                </svg>
+<div class="divider-gray"></div>
+<div class="container px-4 py-5">
+    <div class="dropdown-menu position-static d-flex align-items-stretch p-3 rounded-3 shadow-lg w-600px">
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-2 py-1">
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#first_access">
+                <i class="fa-solid fa-floppy-disk fa-2xl"></i>
                 <div>
-                   <strong class="d-block">Primeiro Contato</strong>
-                   <small>Abri a App pela primeira vez</small>
+                    <strong class="d-block">Primeiro Contato</strong>
+                    <small>Abri a App pela primeira vez</small>
                 </div>
-             </a>
+            </a>
 
-             <a href="#first_fiis" class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start">
-                <svg class="bi" width="32" height="32">
-                   <use xlink:href="#question-circle"/>
-                </svg>
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#first_fiis">
+                <i class="fa-solid fa-circle-question fa-2xl"></i>
                 <div>
-                   <strong class="d-block">Support</strong>
-                   <small>Get help from our support crew</small>
+                    <strong class="d-block">Support</strong>
+                    <small>Get help from our support crew</small>
                 </div>
-             </a>
+            </a>
 
-             <a href="#base_dt_paid_dt" class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start">
-                <svg class="bi" width="32" height="32">
-                   <use xlink:href="#question-circle"/>
-                </svg>
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#base_dt_paid_dt">
+                <i class="fa-solid fa-circle-up fa-2xl"></i>
                 <div>
-                   <strong class="d-block">Support</strong>
-                   <small>Get help from our support crew</small>
+                    <strong class="d-block">Support</strong>
+                    <small>Get help from our support crew</small>
                 </div>
-             </a>
+            </a>
 
-             <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start">
-                <svg class="bi" width="32" height="32">
-                   <use xlink:href="#question-circle"/>
-                </svg>
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#">
+                <i class="fa-regular fa-circle-down fa-2xl"></i>
                 <div>
-                   <strong class="d-block">Support</strong>
-                   <small>Get help from our support crew</small>
+                    <strong class="d-block">Support</strong>
+                    <small>Get help from our support crew</small>
                 </div>
-             </a>
+            </a>
 
-             <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start">
-                <svg class="bi" width="32" height="32">
-                   <use xlink:href="#question-circle"/>
-                </svg>
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#">
+                <i class="fa-solid fa-circle-right fa-2xl" style="color: gold;"></i>
                 <div>
-                   <strong class="d-block">Support</strong>
-                   <small>Get help from our support crew</small>
+                    <strong class="d-block">Support</strong>
+                    <small>Get help from our support crew</small>
                 </div>
-             </a>
+            </a>
 
-             <a href="#" class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start">
-                <svg class="bi" width="32" height="32">
-                   <use xlink:href="#question-circle"/>
-                </svg>
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#">
+                <i class="fa-solid fa-hand-holding-dollar fa-2xl"></i>
                 <div>
-                   <strong class="d-block">Support</strong>
-                   <small>Get help from our support crew</small>
+                    <strong class="d-block">Support</strong>
+                    <small>Get help from our support crew</small>
                 </div>
-             </a>
-           </div>
-       </div>
+            </a>
+        </div>
     </div>
-    <div class="b-example-divider"></div>
-    <!-- first_access -->
-      <div class="container-sm px-4 py-2 align-top" id="first_access" style="min-height:0px !important;">
-         <h2 class="pb-2 border-bottom">Primeiro Contato</h2>
+</div>
+<div class="divider-gray"></div>
+<!-- first_access -->
+<div class="container-sm px-4 py-2 align-top" id="first_access" style="min-height:0px !important;">
+    <h2 class="pb-2 border-bottom">Primeiro Contato</h2>
 
-         <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-            <div class="col d-flex flex-column align-items-start gap-2">
-               <img src="./appimg/first_access.png" class="img-thumbnail img-fluid" alt="Primeiro Acesso">
-            </div>
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/first_access.png">
+        </div>
 
 
-            <div class="col d-flex flex-column align-items-start gap-2 align-top" style="height:100% !important;">
-               <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-               <p class="text-muted align-top">
-                 <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000">
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                  <g id="SVGRepo_iconCarrier"> <path d="M13.5 3C13.5 2.44772 13.0523 2 12.5 2H11.5C10.9477 2 10.5 2.44772 10.5 3V10.5H3C2.44772 10.5 2 10.9477 2 11.5V12.5C2 13.0523 2.44772 13.5 3 13.5H10.5V21C10.5 21.5523 10.9477 22 11.5 22H12.5C13.0523 22 13.5 21.5523 13.5 21V13.5H21C21.5523 13.5 22 13.0523 22 12.5V11.5C22 10.9477 21.5523 10.5 21 10.5H13.5V3Z" fill="#000000"/> </g>
-                </svg>
-                 Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.
-               </p>
-            </div>
-         </div>
+        <div class="col d-flex flex-column align-items-start gap-2 align-top" style="height:100% !important;">
+            <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
+            <p class="text-muted align-top">
+                <i class="fa-solid fa-plus fa-2xl" style="color: black; "></i>
+                Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
+                and probably just keep going until we run out of words.
+            </p>
+        </div>
     </div>
+</div>
 
-    <div class="b-example-divider"></div>
+<div class="divider-gray"></div>
+<!-- Horizontal img-->
+<div class="container px-4 py-5" id="first_fiis">
+    <h2 class="pb-2 border-bottom">Horizontal Image</h2>
 
-    <div class="container px-4 py-5" id="first_fiis">
-       <h2 class="pb-2 border-bottom">Features with title</h2>
-       <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-          <div class="col d-flex flex-column align-items-start gap-2">
-             <h3  class="fw-bold">Left-aligned title explaining these awesome features</h3>
-             <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-             <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-          </div>
-          <div class="col d-flex flex-column align-items-start gap-2">
-             <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-             <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-             <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-          </div>
-       </div>
+    <div class="row row-cols-1 align-items-md-start g-5 py-2">
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/dt_base_dt_pg.png">
+        </div>
+
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
+            <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with
+                another sentence and probably just keep going until we run out of words.</p>
+        </div>
     </div>
+</div>
 
-    <div class="b-example-divider"></div>
+<div class="divider-gray"></div>
 
-    <div class="container px-4 py-5" id="base_dt_paid_dt">
-       <h2 class="pb-2 border-bottom">Features with title</h2>
-       <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
-          <div class="col d-flex flex-column align-items-start gap-2">
-             <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-             <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-             <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-          </div>
-          <div class="col d-flex flex-column align-items-start gap-2">
-             <h3 class="fw-bold">Left-aligned title explaining these awesome features</h3>
-             <p class="text-muted">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-             <a href="#" class="btn btn-primary btn-lg">Primary button</a>
-          </div>
-       </div>
-    </div>
+<div class="container" id="container-footer">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="https://apps.apple.com/us/app/id152279416" class="nav-link px-5 text-muted"><i class="fa-brands fa-apple fa-lg"></i> Apple Store</a></li>
+            <li class="nav-item"><a href="https://fontawesome.com" class="nav-link px-5 text-muted"><i class="fa-solid fa-font-awesome fa-lg"></i> Font Awesome</a></li>
+        </ul>
+        <p class="text-center text-muted">
+            <a href="https://apps.apple.com/us/app/id152279416" class="nav-link px-5 text-muted">
+                <img alt="Logo" class="img-fluid" src="./logo_64.png" height="32" width="32"> App FIIS
+            </a>
+        </p>
+    </footer>
+</div>
 
-    <div class="b-example-divider"></div>
-    </main>
-    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+<div class="divider-gray"></div>
+</main>
 
-  </body>
+<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
