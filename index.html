@@ -154,6 +154,25 @@
                     <small>A importância de efetuar login na App</small>
                 </div>
             </a>
+
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#layout-info">
+                <i class="fa-solid fa-tablet-screen-button fa-xl"></i>
+                <i class="fa-solid fa-mobile-screen fa-xl"></i>
+                <div>
+                    <strong class="d-block">Tamanho da Tela</strong>
+                    <small>Diferentes dispositivos diferente apresentação</small>
+                </div>
+            </a>
+
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#dt_bs_dt_pg">
+                <i class="fa-solid fa-calendar-days fa-2xl"></i>
+                <div>
+                    <strong class="d-block">Data Base Data Pagamento</strong>
+                    <small>Diferença entre a data base e pagamento</small>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -377,6 +396,73 @@
             <p class="text-muted align-top">
                 <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/login_logout.png" style="margin-top: 5px;">
             </p>
+        </div>
+    </div>
+</div>
+
+<div class="divider-gray"></div>
+<div class="container-sm px-4 py-2 align-top" id="layout-info">
+    <h3 class="pb-2 border-bottom">Tamanho da Tela</h3>
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <p class="text-muted align-top">
+                A apresentação da App FIIS varia conforme o dispositivo.
+                <br />
+                Em um iPhone:
+                <br />
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/iPhone.png" style="margin-top: 5px;" width="350">
+            </p>
+        </div>
+
+        <div class="col d-flex flex-column align-items-start gap-2 align-top" >
+            <p class="text-muted align-top">
+                Em um iPad:
+                <br />
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/iPad.png" style="margin-top: 5px;" width="1635">
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="divider-gray"></div>
+<div class="container px-4 py-5" id="dt_bs_dt_pg">
+    <h3 class="pb-2 border-bottom">Data Base Data Pagamento</h3>
+
+    <div class="row row-cols-1 align-items-md-start g-5 py-2">
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <p class="text-muted align-top">
+                A data a ser considerada para ser apto a receber dividendos.
+                A data que você tem que terminar o dia com a posse de um ou mais títulos.<br />
+                Também conhecida como Data-com. <br />
+                Alguns FIIS possuem a data base e a data pagamento no mesmo mês.<br />
+                Nesse exemplo a data base e pagamento são em março:<br />
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/dt_base_dt_pgto_msm2.png" style="margin-top: 5px;">
+            </p>
+        </div>
+
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <p class="text-muted align-top">
+                Alguns FIIS possuem a data base e a data pagamento em meses diferentes.<br />
+                Nesse exemplo a data base é em fevereiro e pagamento em março:<br />
+                <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/dt_base_dt_pgto_dif.png" style="margin-top: 5px; margin-bottom: 5px;">
+                <br />
+                Repare que o gráfico de dividendos, que é baseado na data base, está apresentando valores para os dois FIIS no mês relativo a data base.<br />
+                Não considera março para o segundo, porque a data definida a ter direito ao dividendo é em fevereiro.
+                Se você vender o FII um dia depois da data base, o direito ao dividendo não é perdido, você receberá na data de pagamento do FII o dividendo declarado.
+
+            </p>
+        </div>
+
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <div class="col d-flex flex-column align-items-start gap-2">
+                <p class="text-muted align-top">
+
+                    A medida que o mês avança, mais FIIS vão declarando data base ao longo do mês e, até que chegue no último dia útil do mês, o gráfico de Dividendos e Yeld vão sofrendo alterações.
+                    <br />
+                    Gráficos relativos a data base:
+                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/dt_yield.png" style="margin-top: 5px;">
+                </p>
+            </div>
         </div>
     </div>
 </div>
