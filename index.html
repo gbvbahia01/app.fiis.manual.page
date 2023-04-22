@@ -193,6 +193,16 @@
                     <small>Diferença entre a data base e pagamento</small>
                 </div>
             </a>
+
+            <!-- Sempre por ultimo -->
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#remove_app">
+                <i class="fa-solid fa-hammer fa-2xl"></i>
+                <div>
+                    <strong class="d-block">Resolvendo Problemas</strong>
+                    <small>Desinstalar e instalar a App FIIS</small>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -249,7 +259,7 @@
         <div class="col d-flex flex-column align-items-start gap-2 align-top" style="height:100% !important;">
 
             <p class="text-muted align-top">
-                Ao selecionar um FII na tabela principal uma nova tela é exibida.
+                Ao selecionar um FII na tabela principal, uma nova tela é exibida.
                 Nesta tela é possível editar ou remover uma transação caso seja necessário.<br />
                 <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/table_single_fii.png">
             </p>
@@ -267,7 +277,7 @@
     <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
-            App FIIS apresenta muitas informações sobre a sua carteira e de cada FII. Essas informaçoes são apresentadas nas janelas informativas da sua carteira e individualmente.
+            App FIIS apresenta muitas informações sobre a sua carteira e de cada FII. Essas informações são apresentadas nas janelas informativas da sua carteira e individualmente.
                 <br />
 
                 <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/window_moving_1.png" style="margin-bottom: 10px;">
@@ -387,7 +397,7 @@
             <p class="text-muted align-top">
                Ao utilizar a App FIIS pela primeira vez, você entra como usuário anônimo. Ação recomendada para você conhecer o aplicativo antes de ter que efetuar o Login.
                 <br />
-                Após se familiarizar com a App FIIS, cadastrando alguns FIIS, é importante que realize o login para que suas transações cadastradas possam ser recuperadas caso ocorra troca de aparelho.
+                Após se familiarizar com a App FIIS, cadastrando alguns FIIS, é importante realizar o login para que suas transações cadastradas possam ser recuperadas caso ocorra troca de aparelho.
                 <br />
                 Para efetuar login selecione no menu a opção Efetuar Login:
                 <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/login_menu.png" style="margin-top: 5px;">
@@ -466,7 +476,7 @@
                 Nesse exemplo a data base é em fevereiro e pagamento em março:<br />
                 <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/dt_base_dt_pgto_dif.png" style="margin-top: 5px; margin-bottom: 5px;">
                 <br />
-                Repare que o gráfico de dividendos, que é baseado na data base, está apresentando valores para os dois FIIS no mês relativo a data base.<br />
+                Repare que o gráfico de dividendos, que é baseado na data base, está apresentando valores para os dois FIIS no mês relativo à data base.<br />
                 Não considera março para o segundo, porque a data definida a ter direito ao dividendo é em fevereiro.
                 Se você vender o FII um dia depois da data base, o direito ao dividendo não é perdido, você receberá na data de pagamento do FII o dividendo declarado.
 
@@ -479,10 +489,58 @@
 
                     A medida que o mês avança, mais FIIS vão declarando data base ao longo do mês e, até que chegue no último dia útil do mês, o gráfico de Dividendos e Yeld vão sofrendo alterações.
                     <br />
-                    Gráficos relativos a data base:
+                    Gráficos relativos à data base:
                     <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/dt_yield.png" style="margin-top: 5px;">
                 </p>
             </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="divider-gray"></div>
+<div class="container px-4 py-5" id="remove_app">
+    <h3 class="pb-2 border-bottom">Resolvendo Problemas</h3>
+    <div class="row row-cols-1 align-items-md-start g-5 py-2">
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <p class="text-muted align-top">
+                Algumas vezes problemas acontecem, por exemplo:
+                <ul>
+                    <li>App para de abrir após uma atualização do IOS.</li>
+                    <li>App para de abrir após uma atualização da App.</li>
+                    <li>App apresenta problemas de conexão ao utilizar dados moveis, embora esteja permitido a utilização do mesmo no IOS.</li>
+                </ul>
+                Geralmente esses problemas são causados devido a arquivos de configurações terem sido corrompidos no processo de atualização, da App ou do IOS.<br />
+                A melhor maneira de resolver isso é apagando completamente a App e instalando novamente.<br />
+
+                <div style="display: inline; white-space: nowrap;">
+                    <b style="color: red;">Atenção</b><br />
+                    Antes de seguir com os próximos passos, tenha certeza que está logado na App FIIS com uma conta da Apple ou Goolge.<br />
+                    Caso não esteja logado em uma destas contas, não será possível recuperar as transações cadastradas após esse procedimento.<br />
+                    Se não tem certeza se está, por favor, leia o passo a passo do <a class="link-secondary" href="#login-info">Efetuando Login</a> antes de prosseguir.
+                </div>
+
+                Para apagar a App e todos os arquivos relacionados siga esses passos:
+                <ol type="1">
+                    <li>Selecione Ajustes  <img alt="Panorama" class="rounded " src="./appimg/gear.png" width="32" height="32"></li>
+                    <li>Geral</li>
+                    <li>Armazenamento "nome dispositivo". <i>Será necessário esperar o dispositivo carregar as informações.</i></li>
+                    <li>Procure pela App FIIS na relação de Apps apresentada na tabela e selecione a mesma.</li>
+                    <li>Selecione Apagar App na tela apresentada:<br /><img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/remover_app.png"></li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <p class="text-muted">
+                Instalando a App novamente:
+                <ol type="1">
+                    <li><div style="display: inline; white-space: nowrap;">Instale a App pela <a href="https://apps.apple.com/br/app/app-fiis/id1522794163" target="_blank" class="link-info">Apple Store</a></div>.</li>
+                    <li>Efetue Login na mesma conta que utilizou anteriormente para recuperar as transações.</li>
+            <li>Se recebia notificações anteriormente, deverá habilitar novamente. Selecione <b>Notificações</b> no menu e refaça a configuração da sua preferência.</i></li>
+                    <li>Se atualizava o calendário com os próximos dividendos, deverá habilitar novamente. Selecione <b>Calendário</b> no menu e habilite novamente.</li>
+                </ol>
+            </p>
         </div>
     </div>
 </div>
