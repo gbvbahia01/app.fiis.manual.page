@@ -213,6 +213,15 @@
             </a>
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#calendar">
+                <i class="fa-solid fa-calendar-day fa-2xl"></i>
+                <div>
+                    <strong class="d-block">Calendário</strong>
+                    <small>Entendendo a sinconização com Calendário</small>
+                </div>
+            </a>
+
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#recommended_doc">
                 <i class="fa-solid fa-rectangle-list fa-2xl"></i>
                 <div>
@@ -220,6 +229,17 @@
                     <small>Cadastre uma carteira de referência</small>
                 </div>
             </a>
+
+            <!-- Sempre por ultimo -->
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#remove_app">
+                <i class="fa-solid fa-hammer fa-2xl"></i>
+                <div>
+                    <strong class="d-block">Resolvendo Problemas</strong>
+                    <small>Desinstalar e instalar a App FIIS</small>
+                </div>
+            </a>
+
         </div>
     </div>
 </div>
@@ -549,6 +569,44 @@
 </div>
 
 <div class="divider-gray"></div>
+<div class="container-sm px-4 py-2 align-top" id="calendar">
+    <h3 class="pb-2 border-bottom">Calendário</h3>
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <p class="text-muted align-top">
+                A App FIIS pode colocar no seu calendário pessoal os eventos de recebimento de dividendos. <br />
+                No menu lateral da App, selecione Calendário e ative a função:
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/calendario_tela_ativado.png" style="margin-top: 5px;">
+                O dispositivo irá pedir sua confirmação para liberar o acesso ao calendário, confirme para que a App FIIS possa criar os eventos no mesmo.<br />
+                Para ter informações detalhadas de configuração toque na <i class="fa-solid fa-question" style="color: black;"></i> <i>(interrogação)</i>.
+            </p>
+            <p class="text-muted align-top">
+                Após a configuração, seu calendário apresentará os próximos recebimentos de dividendos:<br />
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/calendario_ex.png" style="margin-top: 5px;">
+
+            </p>
+
+        </div>
+
+        <div class="col d-flex flex-column align-items-start gap-2 align-top" >
+            <p class="text-muted align-top">
+                <b>Resolução de problemas.</b>
+                <br />
+                Caso seu calendário não apresente os próximos dividendos:
+                <ol type="1">
+                    <li>Verifique se possui dividendos a receber. A funcionalidade somente cria eventos futuros, dividendos já recebidos não são incluídos no calendário.</li>
+                    <li>Verifique se o IOS não está bloqueando a App FIIS de acessar o calendário.<br />
+                        Em Ajustes <img alt="Panorama" class="rounded " src="./appimg/gear.png" width="32" height="32"> Selecione a App FIIS no menu lateral esquerdo e verifique:
+                        <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/calendario_setup.png">
+                    </li>
+                </ol>
+
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="divider-gray"></div>
 <div class="container-sm px-4 py-2 align-top" id="recommended_doc">
     <div class="container-title">
         <h3 class="pb-2 border-bottom">Carteira Recomendada</h3>
@@ -626,6 +684,53 @@
                     para a direita e esquerda para visualizar o conteúdo que está por trás das linhas.
                 </p>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="divider-gray"></div>
+<div class="container px-4 py-5" id="remove_app">
+    <h3 class="pb-2 border-bottom">Resolvendo Problemas</h3>
+    <div class="row row-cols-1 align-items-md-start g-5 py-2">
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <p class="text-muted align-top">
+                Algumas vezes problemas acontecem, por exemplo:
+                <ul>
+                    <li>App para de abrir após uma atualização do IOS.</li>
+                    <li>App para de abrir após uma atualização da App.</li>
+                    <li>App apresenta problemas de conexão ao utilizar dados moveis, embora esteja permitido a utilização do mesmo no IOS.</li>
+                </ul>
+                Geralmente esses problemas são causados devido a arquivos de configurações terem sido corrompidos no processo de atualização, da App ou do IOS.<br />
+                A melhor maneira de resolver isso é apagando completamente a App e instalando novamente.<br />
+            </p>
+            <p>
+                <b style="color: red;">Atenção</b><br />
+                Antes de seguir com os próximos passos, tenha certeza que está logado na App FIIS com uma conta da Apple ou Goolge.<br />
+                Caso não esteja logado em uma destas contas, não será possível recuperar as transações cadastradas após esse procedimento.<br />
+                Se não tem certeza se está, por favor, leia o passo a passo do <a class="link-dark" href="#login-info"><b>Efetuando Login</b></a> antes de prosseguir.
+            </p>
+            <p>
+                Para apagar a App e todos os arquivos relacionados siga esses passos:
+                <ol type="1">
+                    <li>Selecione Ajustes  <img alt="Panorama" class="rounded " src="./appimg/gear.png" width="32" height="32"></li>
+                    <li>Geral</li>
+                    <li>Armazenamento "nome dispositivo". <i>Será necessário esperar o dispositivo carregar as informações.</i></li>
+                    <li>Procure pela App FIIS na relação de Apps apresentada na tabela e selecione a mesma.</li>
+                    <li>Selecione Apagar App na tela apresentada:<br /><img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/remover_app.png"></li>
+                </ol>
+            </p>
+        </div>
+
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <p class="text-muted">
+                <b>Instalando a App novamente:</b>
+                <ol type="1">
+                    <li><div style="display: inline; white-space: nowrap;">Instale a App pela <a href="https://apps.apple.com/br/app/app-fiis/id1522794163" target="_blank" class="link-info">Apple Store</a></div>.</li>
+                    <li>Efetue Login na mesma conta que utilizou anteriormente para recuperar as transações.</li>
+                    <li>Se recebia notificações anteriormente, deverá habilitar novamente. Selecione <b>Notificações</b> no menu e refaça a configuração da sua preferência.</i></li>
+                    <li>Se atualizava o calendário com os próximos dividendos, deverá habilitar novamente. Selecione <a class="link-secondary" href="#calendar"><b>Calendário</b></a> no menu e habilite novamente.</li>
+                </ol>
+            </p>
         </div>
     </div>
 </div>
