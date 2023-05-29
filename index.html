@@ -108,6 +108,24 @@
         #myBtn:hover {
             background-color: #555; /* Add a dark-grey background on hover */
         }
+
+        .add-recommendation {
+            display: inline-flex;
+            align-items: center;
+        }
+        .add-recommendation i {
+                margin-right: 5px;
+        }
+
+     .container-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .version {
+        font-size: 14px;
+    }
+
     </style>
 
     <!-- Custom styles for this template -->
@@ -115,7 +133,7 @@
     <script src="https://kit.fontawesome.com/2d4c97df86.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-arrow-up fa-lg"></i></i></button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-arrow-up fa-lg"></i></button>
 
 <div class="divider-gray"></div>
 <div class="container px-4 py-5">
@@ -193,6 +211,15 @@
                     <small>Diferença entre a data base e pagamento</small>
                 </div>
             </a>
+
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#recommended_doc">
+                <i class="fa-solid fa-rectangle-list fa-2xl"></i>
+                <div>
+                    <strong class="d-block">Carteira Recomendada</strong>
+                    <small>Cadastre uma carteira de referência</small>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -204,24 +231,30 @@
     <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
-                Para cadastrar o seu primeiro FII basta tocar na imagem <i class="fa-solid fa-plus fa-lg" style="color: black;"></i>
-                <i>(mais)</i> no canto superior direito.<br />
+                Para cadastrar o seu primeiro FII basta tocar na imagem <i class="fa-solid fa-plus fa-lg"
+                                                                           style="color: black;"></i>
+                <i>(mais)</i> no canto superior direito.<br/>
 
-            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/first_access.png">
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/first_access.png">
             </p>
         </div>
 
 
-        <div class="col d-flex flex-column align-items-start gap-2 align-top" >
+        <div class="col d-flex flex-column align-items-start gap-2 align-top">
             <p class="text-muted align-top">
-                Os 3 campos superiores, código do FII, preço por únidade e quantidade, são sugestivos e possuem ajuda que podem ser observada ao tocar a <i class="fa-solid fa-question" style="color: black;"></i> <i>(interrogação)</i>.
-                <br />
-                Repare que informar se foi uma operação <b>compra ou venda</b>, é selecionado após os preenchimentos dos campos.
-                <br />
-                A <b>data da transação</b> deve ser informada no calendário abaixo. É através da data da transação que a App irá saber o valor no histórico da sua carteira e os dividendos que teve direito, mês a mês.
-                <br />
-                Após preencher todas as informações, aperte o <i class="fa-solid fa-floppy-disk" style="color: black;"></i> <i>(disquete)</i> no canto superior direito para salvar a mesma.
-                <br />
+                Os 3 campos superiores, código do FII, preço por únidade e quantidade, são sugestivos e possuem ajuda
+                que podem ser observada ao tocar a <i class="fa-solid fa-question" style="color: black;"></i> <i>(interrogação)</i>.
+                <br/>
+                Repare que informar se foi uma operação <b>compra ou venda</b>, é selecionado após os preenchimentos dos
+                campos.
+                <br/>
+                A <b>data da transação</b> deve ser informada no calendário abaixo. É através da data da transação que a
+                App irá saber o valor no histórico da sua carteira e os dividendos que teve direito, mês a mês.
+                <br/>
+                Após preencher todas as informações, aperte o <i class="fa-solid fa-floppy-disk"
+                                                                 style="color: black;"></i> <i>(disquete)</i> no canto
+                superior direito para salvar a mesma.
+                <br/>
                 <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/add_transaction.png">
             </p>
 
@@ -238,8 +271,10 @@
     <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
-                As tabelas principais da App FIIS possuem menus de ação para várias funcionalidades. Arresta a linha para a direita <i class="fa-regular fa-hand-point-right"></i> ou esquerda <i class="fa-regular fa-hand-point-left"></i> para visualizar.
-                <br />
+                As tabelas principais da App FIIS possuem menus de ação para várias funcionalidades. Arresta a linha
+                para a direita <i class="fa-regular fa-hand-point-right"></i> ou esquerda <i
+                    class="fa-regular fa-hand-point-left"></i> para visualizar.
+                <br/>
 
                 <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/table_menus.png">
             </p>
@@ -250,7 +285,7 @@
 
             <p class="text-muted align-top">
                 Ao selecionar um FII na tabela principal uma nova tela é exibida.
-                Nesta tela é possível editar ou remover uma transação caso seja necessário.<br />
+                Nesta tela é possível editar ou remover uma transação caso seja necessário.<br/>
                 <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/table_single_fii.png">
             </p>
 
@@ -267,13 +302,15 @@
     <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
-            App FIIS apresenta muitas informações sobre a sua carteira e de cada FII. Essas informaçoes são apresentadas nas janelas informativas da sua carteira e individualmente.
-                <br />
+                App FIIS apresenta muitas informações sobre a sua carteira e de cada FII. Essas informaçoes são
+                apresentadas nas janelas informativas da sua carteira e individualmente.
+                <br/>
 
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/window_moving_1.png" style="margin-bottom: 10px;">
-                <br />
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/window_moving_1.png"
+                     style="margin-bottom: 10px;">
+                <br/>
                 Para alterar as janelas faça o movimento da direita para esquerda:
-                <br />
+                <br/>
                 <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/window_moving_2.png">
             </p>
         </div>
@@ -283,11 +320,13 @@
 
             <p class="text-muted align-top">
                 <b>Obtendo Ajuda</b>
-                <br />
-                As janelas informativas possuem um botão que apresenta um texto de ajuda sobre o que cada uma contém. Basta tocar na <i class="fa-solid fa-circle-question" style="color: black"></i> <i>(interrogação)</i><br />
+                <br/>
+                As janelas informativas possuem um botão que apresenta um texto de ajuda sobre o que cada uma contém.
+                Basta tocar na <i class="fa-solid fa-circle-question" style="color: black"></i>
+                <i>(interrogação)</i><br/>
                 <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/window_moving_3.png">
 
-                para que o texto seja apresentado:<br />
+                para que o texto seja apresentado:<br/>
                 <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/window_moving_4.png">
             </p>
 
@@ -302,10 +341,12 @@
     <div class="row row-cols-1 align-items-md-start g-5 py-2">
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
-            Utilizando um iPhone, com a opçao de rotacionar <img alt="Panorama" class="rounded " src="./appimg/lock.png"> desbloqueada, rotacione seu dispositivo para alterar a visualização da tabela princial.
+                Utilizando um iPhone, com a opçao de rotacionar <img alt="Panorama" class="rounded "
+                                                                     src="./appimg/lock.png"> desbloqueada, rotacione
+                seu dispositivo para alterar a visualização da tabela princial.
             </p>
             <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/landscape.png">
-            <br />
+            <br/>
             <p class="text-muted align-top">
                 Dependo da visão selecionada no menu, as informações contida nos gráficos podem ser diferentes:
             </p>
@@ -315,8 +356,8 @@
         <div class="col d-flex flex-column align-items-start gap-2">
 
             <p class="text-muted">
-            <b>Menu Visão</b>
-                <br />
+                <b>Menu Visão</b>
+                <br/>
                 Para alterar a visão, abra o menu superior esquerdo e seleciona a visão desejada.
                 Repare que a visão atual não aparece como opção no menu.
             </p>
@@ -334,19 +375,21 @@
             <p class="text-muted align-top">
                 A ordem que os seus FIIS são apresentados na tabela principal pode ser alterada. São 4 possibilidades:
                 por segmento, por data de recebimento de dividendos, alfabética e por rentabilidade.
-                <br />
-                <br />
+                <br/>
+                <br/>
                 <b>Segmento</b>
-                <br />
+                <br/>
                 Os FIIS são ordenados em ordem alfabética agrupados pelo segmento que pertencem.
-                <br />
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_seg.png" style="margin-bottom: 10px;">
-                <br />
+                <br/>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_seg.png"
+                     style="margin-bottom: 10px;">
+                <br/>
                 <b>Data de recebimento de dividendos</b>
-                <br />
+                <br/>
                 Os FIIS são ordenados em ordem alfabética agrupados pela data que pagaram ou pagarão dividendos.
-                <br />
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_dt.png" style="margin-bottom: 10px;">
+                <br/>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_dt.png"
+                     style="margin-bottom: 10px;">
             </p>
         </div>
 
@@ -355,23 +398,26 @@
 
             <p class="text-muted align-top">
                 <b>Rentabilidade</b>
-                <br />
-                Os FIIS são ordenados conforme o percentual de rentabilidade. Valor de compra comparado com o valor atual.
+                <br/>
+                Os FIIS são ordenados conforme o percentual de rentabilidade. Valor de compra comparado com o valor
+                atual.
                 A ordenação é do menos rentavel para o mais rentavel.
-                <br />
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_rent.png" style="margin-bottom: 10px;">
-                <br />
+                <br/>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_rent.png"
+                     style="margin-bottom: 10px;">
+                <br/>
                 <b>Alfabética</b>
-                <br />
+                <br/>
                 Ordenado conforme o código de negociação do FIIS na B3.
-                <br />
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_fiis.png" style="margin-bottom: 10px;">
+                <br/>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_fiis.png"
+                     style="margin-bottom: 10px;">
             </p>
         </div>
 
         <div class="col d-flex flex-column align-items-start gap-1 align-top" style="margin-top: -20px;">
-        Para alterar a ordenação utlize o menu laterar:
-        <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_menu.png">
+            Para alterar a ordenação utlize o menu laterar:
+            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_menu.png">
         </div>
 
     </div>
@@ -385,20 +431,25 @@
     <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
-               Ao utilizar a App FIIS pela primeira vez, você entra como usuário anônimo. Ação recomendada para você conhecer o aplicativo antes de ter que efetuar o Login.
-                <br />
-                Após se familiarizar com a App FIIS, cadastrando alguns FIIS, é importante que realize o login para que suas transações cadastradas possam ser recuperadas caso ocorra troca de aparelho.
-                <br />
+                Ao utilizar a App FIIS pela primeira vez, você entra como usuário anônimo. Ação recomendada para você
+                conhecer o aplicativo antes de ter que efetuar o Login.
+                <br/>
+                Após se familiarizar com a App FIIS, cadastrando alguns FIIS, é importante que realize o login para que
+                suas transações cadastradas possam ser recuperadas caso ocorra troca de aparelho.
+                <br/>
                 Para efetuar login selecione no menu a opção Efetuar Login:
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/login_menu.png" style="margin-top: 5px;">
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/login_menu.png"
+                     style="margin-top: 5px;">
             </p>
         </div>
 
-        <div class="col d-flex flex-column align-items-start gap-2 align-top" >
+        <div class="col d-flex flex-column align-items-start gap-2 align-top">
             <p class="text-muted align-top">
-                Depois selecione logar com sua conta Apple ou com uma conta Google.<br />
-                Lembrando que para recuperar os dados posteriormente deverá selecionar com a mesma conta que entrou inicialmente.
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/login_tela.png" style="margin-top: 5px;">
+                Depois selecione logar com sua conta Apple ou com uma conta Google.<br/>
+                Lembrando que para recuperar os dados posteriormente deverá selecionar com a mesma conta que entrou
+                inicialmente.
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/login_tela.png"
+                     style="margin-top: 5px;">
             </p>
         </div>
     </div>
@@ -408,13 +459,15 @@
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
                 Ao abrir a App em um segundo dispositivo pela primeira vez, selecione a opção Efetuar Login no menu.
-                <br />
-                Antes de selecionar novamente a conta que utilizou previavente para logar, efetue o Logout do modo anonimo para então selecionar a conta que haviado utilizado anteriormente.
+                <br/>
+                Antes de selecionar novamente a conta que utilizou previavente para logar, efetue o Logout do modo
+                anonimo para então selecionar a conta que haviado utilizado anteriormente.
             </p>
         </div>
-        <div class="col d-flex flex-column align-items-start gap-2 align-top" >
+        <div class="col d-flex flex-column align-items-start gap-2 align-top">
             <p class="text-muted align-top">
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/login_logout.png" style="margin-top: 5px;">
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/login_logout.png"
+                     style="margin-top: 5px;">
             </p>
         </div>
     </div>
@@ -427,18 +480,20 @@
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
                 A apresentação da App FIIS varia conforme o dispositivo.
-                <br />
+                <br/>
                 Em um iPhone:
-                <br />
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/iPhone.png" style="margin-top: 5px;" width="350">
+                <br/>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/iPhone.png"
+                     style="margin-top: 5px;" width="350">
             </p>
         </div>
 
-        <div class="col d-flex flex-column align-items-start gap-2 align-top" >
+        <div class="col d-flex flex-column align-items-start gap-2 align-top">
             <p class="text-muted align-top">
                 Em um iPad:
-                <br />
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/iPad.png" style="margin-top: 5px;" width="1635">
+                <br/>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/iPad.png"
+                     style="margin-top: 5px;" width="1635">
             </p>
         </div>
     </div>
@@ -452,23 +507,27 @@
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
                 A data a ser considerada para ser apto a receber dividendos.
-                A data que você tem que terminar o dia com a posse de um ou mais títulos.<br />
-                Também conhecida como Data-com. <br />
-                Alguns FIIS possuem a data base e a data pagamento no mesmo mês.<br />
-                Nesse exemplo a data base e pagamento são em março:<br />
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/dt_base_dt_pgto_msm2.png" style="margin-top: 5px;">
+                A data que você tem que terminar o dia com a posse de um ou mais títulos.<br/>
+                Também conhecida como Data-com. <br/>
+                Alguns FIIS possuem a data base e a data pagamento no mesmo mês.<br/>
+                Nesse exemplo a data base e pagamento são em março:<br/>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/dt_base_dt_pgto_msm2.png"
+                     style="margin-top: 5px;">
             </p>
         </div>
 
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
-                Alguns FIIS possuem a data base e a data pagamento em meses diferentes.<br />
-                Nesse exemplo a data base é em fevereiro e pagamento em março:<br />
-                <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/dt_base_dt_pgto_dif.png" style="margin-top: 5px; margin-bottom: 5px;">
-                <br />
-                Repare que o gráfico de dividendos, que é baseado na data base, está apresentando valores para os dois FIIS no mês relativo a data base.<br />
+                Alguns FIIS possuem a data base e a data pagamento em meses diferentes.<br/>
+                Nesse exemplo a data base é em fevereiro e pagamento em março:<br/>
+                <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid"
+                     src="./appimg/dt_base_dt_pgto_dif.png" style="margin-top: 5px; margin-bottom: 5px;">
+                <br/>
+                Repare que o gráfico de dividendos, que é baseado na data base, está apresentando valores para os dois
+                FIIS no mês relativo a data base.<br/>
                 Não considera março para o segundo, porque a data definida a ter direito ao dividendo é em fevereiro.
-                Se você vender o FII um dia depois da data base, o direito ao dividendo não é perdido, você receberá na data de pagamento do FII o dividendo declarado.
+                Se você vender o FII um dia depois da data base, o direito ao dividendo não é perdido, você receberá na
+                data de pagamento do FII o dividendo declarado.
 
             </p>
         </div>
@@ -477,16 +536,99 @@
             <div class="col d-flex flex-column align-items-start gap-2">
                 <p class="text-muted align-top">
 
-                    A medida que o mês avança, mais FIIS vão declarando data base ao longo do mês e, até que chegue no último dia útil do mês, o gráfico de Dividendos e Yeld vão sofrendo alterações.
-                    <br />
+                    A medida que o mês avança, mais FIIS vão declarando data base ao longo do mês e, até que chegue no
+                    último dia útil do mês, o gráfico de Dividendos e Yeld vão sofrendo alterações.
+                    <br/>
                     Gráficos relativos a data base:
-                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/dt_yield.png" style="margin-top: 5px;">
+                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/dt_yield.png"
+                         style="margin-top: 5px;">
                 </p>
             </div>
         </div>
     </div>
 </div>
 
+<div class="divider-gray"></div>
+<div class="container-sm px-4 py-2 align-top" id="recommended_doc">
+    <div class="container-title">
+        <h3 class="pb-2 border-bottom">Carteira Recomendada</h3>
+        <span class="version">Versão 1.17.5</span>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
+        <div class="col d-flex flex-column align-items-start gap-2">
+            <p class="text-muted align-top">
+                Esta tela foi desenvolvida para cadastrar a carteira recomendada, que serve como uma referência para
+                você.<br/>
+                Por exemplo, pode ser a carteira de um analista que você acompanha ou a carteira que você mesmo criou
+                com base em análise financeira. <br/>
+                Você informa o Fundo de Investimento Imobiliário (FII), o valor-alvo para compra e o peso que o FII deve
+                ter na sua carteira. <br/>
+                Com base nessas informações, o aplicativo irá:
+            <ul>
+                <li>Simular o histórico do rendimento (yield) dessa carteira com base nos pesos definidos.</li>
+                <li>Agrupar a distribuição da carteira por segmento.</li>
+                <li>Comparar o peso de cada FII na sua carteira real com o da carteira recomendada.</li>
+                <li>Fornecer o valor recomendado como referência para o FII na tabela principal.</li>
+            </ul>
+            Para acessar a a funcionalidade utilize o menu lateral da App, em Mais FIIS selecione <b>Recomendação.</b>
+            <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/menu_rec.png"
+                 style="margin-top: 5px; margin-bottom: 25px;">
+            <span class="add-recommendation">Para adicionar uma nova recomendação, aperte&nbsp;
+                <i class="fa-solid fa-plus fa-lg" style="color: black;"></i>
+                <span>(mais)</span> no canto superior direito.
+            </span>
+            <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/add_bt_rec.png"
+                 style="margin-top: 5px;">
+            Você irá informar:
+            <ul>
+                <li>Código do FII</li>
+                <li>Valor Recomendado</li>
+                <li>O Peso na Carteira.</li>
+            </ul>
+
+            </p>
+        </div>
+
+        <div class="col d-flex flex-column align-items-start gap-2 align-top">
+            <div class="col d-flex flex-column align-items-start gap-2 align-top">
+                <p class="text-muted align-top">
+                    <b>Valor Recomendado</b><br/>
+                    O valor recomendado não é uma informação obrigatória.<br/>
+                    Caso sua carteira recomendada não possua um valor recomendado para a compra de um ativo, você deve
+                    deixar esse valor zerado, 0,00.<br/>
+                    Informando esse valor, ele será exibido na tela principal ao lado da cotação atual do FII,
+                    proporcionando uma referência fácil.<br/>
+                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid"
+                         src="./appimg/value_quot_rec.png" style="margin-top: 5px; margin-bottom: 5px;"><br/>
+                    <br/>
+                    <b>O Peso na Carteira.</b><br/>
+                    Uma carteira recomendada é baseada na distribuição de ativos, geralmente em termos percentuais.<br/>
+                    Se a soma de todos os pesos dos ativos recomendados for 100, esse valor representará a distribuição
+                    percentual que cada ativo deve ter na carteira.<br/>
+                    Caso a soma de todos os pesos não seja igual a 100, o App FIIS realizará a distribuição percentual
+                    com base no peso individual em relação ao peso total dos ativos cadastrados.<br/>
+                    Por exemplo: se você cadastrar 4 ativos, todos com peso igual a 10, o App FIIS considerará que cada
+                    ativo corresponde a 25% da sua carteira.<br/>
+                    Sendo a soma de todos os pesos igual a 100, somente uma informação será exibida na tabela da
+                    carteira recomendada, sendo diferente, os dois valores serão exibidos.
+                    <i>O Peso na Carteira soma igual a 100%.</i><br/>
+                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid"
+                         src="./appimg/percent_no_weight.png" style="margin-top: 5px; margin-bottom: 5px;"><br/>
+                    <i>O Peso na Carteira soma diferente de 100%.</i><br/>
+                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid"
+                         src="./appimg/percent_weight.png" style="margin-top: 5px; margin-bottom: 5px;"><br/>
+                    O percentual calculado com base no peso do ativo será exibido na tela principal, ao lado da alocação do FII na sua carteira, proporcionando uma referência fácil.<br/>
+                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid"
+                         src="./appimg/aloc_percent_rec.png" style="margin-top: 5px; margin-bottom: 5px;"><br/>
+                    <br/>
+                    <b>Edição dos Valores</b><br/>
+                    Lembrando que na App FIIS, as tabelas possuem menus laterais. Não se esqueça de movimentar a tabela
+                    para a direita e esquerda para visualizar o conteúdo que está por trás das linhas.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 <!--div class="divider-gray"></div>
 <div class="container px-4 py-5" id="ID-CONTEUDO">
     <h3 class="pb-2 border-bottom">TITULO</h3>
@@ -518,11 +660,14 @@
 
 <div class="container" id="container-footer">
     <footer class="py-3 my-4">
-      <p class="fs-6 text-center text-muted" id="fontFWText">
-      </p>
+        <p class="fs-6 text-center text-muted" id="fontFWText">
+        </p>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item" id="removeByApp1"><a href="https://apps.apple.com/br/app/app-fiis/id1522794163" class="nav-link px-5 text-muted"><i class="fa-brands fa-apple fa-lg"></i> Apple Store</a></li>
-            <li class="nav-item"><a href="https://fontawesome.com" class="nav-link px-5 text-muted"><i class="fa-solid fa-font-awesome fa-lg"></i> Font Awesome</a></li>
+            <li class="nav-item" id="removeByApp1"><a href="https://apps.apple.com/br/app/app-fiis/id1522794163"
+                                                      class="nav-link px-5 text-muted"><i
+                    class="fa-brands fa-apple fa-lg"></i> Apple Store</a></li>
+            <li class="nav-item"><a href="https://fontawesome.com" class="nav-link px-5 text-muted"><i
+                    class="fa-solid fa-font-awesome fa-lg"></i> Font Awesome</a></li>
         </ul>
         <p class="text-center text-muted" id="removeByApp2">
             <a href="https://apps.apple.com/br/app/app-fiis/id1522794163" class="nav-link px-5 text-muted">
@@ -533,10 +678,9 @@
 </div>
 
 <div class="divider-gray" id="removeByApp3"></div>
-</main>
 
 <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript">
+<script type="text/javascript">
   //<![CDATA[
       // Get the button:
     let mybutton = document.getElementById("myBtn");
@@ -558,7 +702,8 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
     //]]>
-  </script>
+
+</script>
 
 </body>
 </html>
