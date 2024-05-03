@@ -265,6 +265,15 @@
             </a>
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
+               href="#split_app">
+                <i class="fas fa-object-group fa-2xl"></i>
+                <div>
+                    <strong class="d-block">Agrupamento/Desdobramento</strong>
+                    <small>O que fazer quando um FII precisa de ajustes nas transações</small>
+                </div>
+            </a>
+
+            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#buy_app">
                 <i class="fa-solid fa-credit-card fa-2xl"></i>
                 <div>
@@ -867,6 +876,80 @@
                 <br/>
                 Todos os dividendos e cotações que ocorreram no código antigo serão transferidos para o novo código, garantindo que nenhum dividendo seja perdido.
             </p>
+        </div>
+    </div>
+</div>
+<div class="divider-gray"></div>
+<!-- Table Menu -->
+<div class="container-sm px-4 py-2 align-top" id="split_app" style="min-height:0px !important;">
+    <div class="container-title border-bottom">
+        <h3 class="pb-2">Agrupamento/Desdobramento</h3>
+        <span class="version">Versão 1.19.2</span>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
+        <div class="col d-flex flex-column align-items-start gap-2">
+
+            <p class="text-muted align-top">
+                <b>Entendendo Eventos de Desdobramento/Agrupamento</b>
+                <br />
+                Os eventos de desdobramento e agrupamento em Fundos de Investimento Imobiliário (FIIs) ajustam a quantidade de cotas disponíveis sem modificar o patrimônio do fundo.<br />
+                Essas ações são estratégicas, influenciando tanto a liquidez quanto o preço de mercado das cotas.
+                <br />
+                <br />
+                <b>Desdobramento de Cotas</b>
+                <br />
+                O desdobramento ocorre quando o fundo divide cada cota existente em várias novas cotas, aumentando assim o total de cotas disponíveis.
+                Por exemplo, em um desdobramento de 2 para 1, a quantidade de cotas que cada investidor possui é dobrada, enquanto o valor de mercado total permanece inalterado.
+                Esse processo pode tornar as cotas mais acessíveis e atrair novos investidores.
+                <br />
+                <br />
+                <b>Agrupamento de Cotas</b>
+                <br />
+                O agrupamento, ou "reverse split", consiste na combinação de várias cotas em uma única, reduzindo o número total de cotas.
+                Este procedimento pode aumentar o preço unitário de cada cota no mercado, ajudando o fundo a cumprir regulamentos de preço mínimo ou a melhorar sua imagem perante os investidores.
+            </p>
+            <p class="text-muted align-top">
+                <b>Como Realizar Desdobramentos/Agrupamentos na App FIIS</b><br />
+                Quando um FII anuncia um ajuste de desdobramento ou agrupamento, este é configurado no servidor da App FIIS. Na tela principal da App, um ícone ao lado do código do FII indica a presença de ajustes (veja a figura abaixo).<br />
+                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_icon_app.png"><br /><br />
+                Deslizando lateralmente, você acessa os detalhes dos desdobramentos disponíveis para o FII selecionado.
+                <br /><b>Este recurso só estará disponível se o FII possuir Agrupamento/Desdobramento cadastrado no servidor da App FIIS</b><br />
+                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_menu_lateral.png"><br /><br />
+                Na tela de ajustes, a parte superior exibe uma tabela com os ajustes disponíveis, enquanto a parte inferior lista todas as transações registradas para o FII.
+                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_sem_selecao.png"><br />
+            </p>
+        </div>
+
+
+        <div class="col d-flex flex-column align-items-start gap-2 align-top" style="height:100% !important;">
+            <p class="text-muted align-top">
+                Normalmente, você verá apenas um ajuste, a menos que mais de um tenha sido notificado recentemente.<br />
+                Selecione o ajuste desejado e observe as alterações simuladas na tabela de transações.<br />
+                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_selecionado.png"><br />
+                Nesse agrupamento você pode observar, no meio da linha da transação, a quantidade e o valor unitário que será transformado na mesma. Sendo em branco no lado esquerdo da linha os valores horiginais.
+                Transações elegíveis para ajuste terão seus detalhes exibidos em amarelo, indicando que ainda não foram ajustadas.
+                <br /><br />
+                Ao interagir com uma transação na lista, você tem a opção de selecioná-la ou desselecioná-la para ajuste. Desmarcar uma transação a exclui do processo de aplicação do ajuste, preservando seus valores originais.
+                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_nao_selecionado.png"><br />
+                <br />
+                Um texto vermelho alerta para transações que resultariam em uma quantidade inválida de cotas após um agrupamento, necessitando intervenção manual.
+                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_vermelho.png"><br /><br />
+                <br />
+                Transações já ajustadas são exibidas em verde com a etiqueta "Processado", indicando que não estão disponíveis para reajuste.
+                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_verder.png"><br /><br />
+            </p>
+
+            <p class="text-muted align-top">
+                <b>Entendendo a Tabela de Ajustes</b>
+            <ul>
+                <li><b>Data Limite:</b> A data máxima para que uma transação seja elegível para ajuste.</li>
+                <li><b>Fator:</b> Determina o recalculo das quantidades de cotas; multiplica-se para desdobramentos e divide-se para agrupamentos.</li>
+            </ul>
+            <b>Finalizando o Processo</b>
+            Após selecionar as transações, pressione "Aplicar" para concluir as alterações. Aguarde a confirmação de sucesso do processo.<br />
+            O ícone continuará visível na tela principal por até sete dias após a data limite, mesmo após o processamento de todos os ajustes.
+            </p>
+
         </div>
     </div>
 </div>
