@@ -771,80 +771,29 @@
 <div class="container-sm px-4 py-2 align-top" id="recommended_doc">
     <div class="container-title">
         <h3 class="pb-2 border-bottom">Carteira Recomendada</h3>
-        <span class="version">Versão 1.17.5</span>
+        <span class="version">Versão 2.0.0</span>
     </div>
     <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
-                Esta tela foi desenvolvida para cadastrar a carteira recomendada, que serve como uma referência para
-                você.<br/>
-                Por exemplo, pode ser a carteira de um analista que você acompanha ou a carteira que você mesmo criou
-                com base em análise financeira. <br/>
-                Você informa o Fundo de Investimento Imobiliário (FII), o valor-alvo para compra e o peso que o FII deve
-                ter na sua carteira. <br/>
-                Com base nessas informações, o aplicativo irá:
-
-                <ul>
-                    <li>Simular o histórico do rendimento (yield) dessa carteira com base nos pesos definidos.</li>
-                    <li>Agrupar a distribuição da carteira por segmento.</li>
-                    <li>Comparar o peso de cada FII na sua carteira real com o da carteira recomendada.</li>
-                    <li>Fornecer o valor recomendado como referência para o FII na tabela principal.</li>
-                </ul>
+                Esta funcionalidade permite ao usuário cadastrar até três carteiras recomendadas, que podem ser personalizadas conforme a sua estratégia de investimentos.<br />
+                Por exemplo, as carteiras podem representar diferentes níveis de risco e retorno, como Conservador, Moderado e Agressivo, mas os nomes podem ser alterados de acordo com a preferência do usuário.
+            </p>
+            <p class="text-muted align-top">
+                Para acessar a tela de cadastro das carteiras recomendadas, utilize o menu lateral da App. Selecione a opção Recomendação dentro da seção Mais FIIS.
+                <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/v2/recomendada/menu_rec.png" style="margin: 5px 0 5px 0"><br />
             </p>
 
             <p class="text-muted align-top">
-            Para acessar a funcionalidade utilize o menu lateral da App, em Mais FIIS selecione <b>Recomendação.</b><br />
-            <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/menu_rec.png"
-                 style="margin-top: 5px; margin-bottom: 25px;"/><br />
-            Para adicionar uma nova recomendação, aperte <b>+</b> (mais) no canto superior direito.<br />
-
-            <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/add_bt_rec.png"
-                 style="margin-top: 5px;"><br />
-            Você irá informar:
-            <ul>
-                <li>Código do FII</li>
-                <li>Valor Recomendado</li>
-                <li>O Peso na Carteira.</li>
-            </ul>
-
+                Ao acessar essa tela, você poderá adicionar uma nova carteira recomendada clicando no ícone <b>+</b> no canto superior direito da tela.
+                <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/v2/recomendada/add_rec.png" style="margin: 5px 0 5px 0"><br />
             </p>
         </div>
 
         <div class="col d-flex flex-column align-items-start gap-2 align-top">
             <div class="col d-flex flex-column align-items-start gap-2 align-top">
                 <p class="text-muted align-top">
-                    <b>Valor Recomendado</b><br/>
-                    O valor recomendado não é uma informação obrigatória.<br/>
-                    Caso sua carteira recomendada não possua um valor recomendado para a compra de um ativo, você deve
-                    deixar esse valor zerado, 0,00.<br/>
-                    Informando esse valor, ele será exibido na tela principal ao lado da cotação atual do FII,
-                    proporcionando uma referência fácil.<br/>
-                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid"
-                         src="./appimg/value_quot_rec.png" style="margin-top: 5px; margin-bottom: 5px;"><br/>
-                    <br/>
-                    <b>O Peso na Carteira.</b><br/>
-                    Uma carteira recomendada é baseada na distribuição de ativos, geralmente em termos percentuais.<br/>
-                    Se a soma de todos os pesos dos ativos recomendados for 100, esse valor representará a distribuição
-                    percentual que cada ativo deve ter na carteira.<br/>
-                    Caso a soma de todos os pesos não seja igual a 100, o App FIIS realizará a distribuição percentual
-                    com base no peso individual em relação ao peso total dos ativos cadastrados.<br/>
-                    Por exemplo: se você cadastrar 4 ativos, todos com peso igual a 10, o App FIIS considerará que cada
-                    ativo corresponde a 25% da sua carteira.<br/>
-                    Sendo a soma de todos os pesos igual a 100, somente uma informação será exibida na tabela da
-                    carteira recomendada, sendo diferente, os dois valores serão exibidos.
-                    <i>O Peso na Carteira soma igual a 100%.</i><br/>
-                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid"
-                         src="./appimg/percent_no_weight.png" style="margin-top: 5px; margin-bottom: 5px;"><br/>
-                    <i>O Peso na Carteira soma diferente de 100%.</i><br/>
-                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid"
-                         src="./appimg/percent_weight.png" style="margin-top: 5px; margin-bottom: 5px;"><br/>
-                    O percentual calculado com base no peso do ativo será exibido na tela principal, ao lado da alocação do FII na sua carteira, proporcionando uma referência fácil.<br/>
-                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid"
-                         src="./appimg/aloc_percent_rec.png" style="margin-top: 5px; margin-bottom: 5px;"><br/>
-                    <br/>
-                    <b>Edição dos Valores</b><br/>
-                    Lembrando que na App FIIS, as tabelas possuem menus laterais. Não se esqueça de movimentar a tabela
-                    para a direita e esquerda para visualizar o conteúdo que está por trás das linhas.
+
                 </p>
             </div>
         </div>
