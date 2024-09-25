@@ -513,23 +513,28 @@
     <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
-                A ordem que os seus FIIS são apresentados na tabela principal pode ser alterada. São 4 possibilidades:
-                por segmento, por data de recebimento de dividendos, alfabética e por rentabilidade.
+                A ordem em que os seus FIIs são apresentados na tabela principal pode ser alterada. São 5
+                possibilidades: por segmento, por data de recebimento de dividendos, por ordem alfabética, por
+                rentabilidade e pelas carteiras recomendadas.
                 <br/>
                 <br/>
                 <b>Segmento</b>
                 <br/>
                 Os FIIS são ordenados em ordem alfabética agrupados pelo segmento que pertencem.
                 <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_seg.png"
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/order_seg.png"
                      style="margin-bottom: 10px;">
                 <br/>
                 <b>Data de recebimento de dividendos</b>
                 <br/>
                 Os FIIS são ordenados em ordem alfabética agrupados pela data que pagaram ou pagarão dividendos.
                 <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_dt.png"
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/order_dt.png"
                      style="margin-bottom: 10px;">
+            </p>
+            <p class="text-muted align-top">
+            Para alterar a ordenação utilize o menu lateral:
+            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/menu.png">
             </p>
         </div>
 
@@ -543,21 +548,24 @@
                 atual.
                 A ordenação é do menos rentável para o mais rentável.
                 <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_rent.png"
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/order_rent.png"
                      style="margin-bottom: 10px;">
                 <br/>
                 <b>Alfabética</b>
                 <br/>
                 Ordenado conforme o código de negociação dos FIIS na B3.
                 <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_fiis.png"
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/order_fii.png"
+                     style="margin-bottom: 10px;">
+                <br/>
+                <b>Carteiras Recomendadas</b>
+                <br/>
+                Os FIIs são ordenados em ordem alfabética, agrupados pela carteira recomendada a que pertencem. Os que
+                não estão em nenhuma carteira recomendada aparecerão no grupo "Sem Recomendação".
+                <br/>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/order_rec.png"
                      style="margin-bottom: 10px;">
             </p>
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-1 align-top" style="margin-top: -20px;">
-            Para alterar a ordenação utlize o menu lateral:
-            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/order_menu.png">
         </div>
 
     </div>
@@ -931,13 +939,16 @@
 
                 <p class="text-muted align-top">
                     <b>Peso e Participação - Como Funciona</b><br/>
-                    Ao cadastrar um FII em uma carteira, você define um peso para ele. A App FIIS calcula automaticamente a
+                    Ao cadastrar um FII em uma carteira, você define um peso para ele. A App FIIS calcula
+                    automaticamente a
                     participação de cada FII com base nos pesos informados.<br/>
                     Primeiro FII: Quando você cadastra o primeiro FII em uma carteira, sua participação será de 100%,
                     independentemente do peso informado.<br/>
                     Segundo FII e seguintes: Ao adicionar mais FIIs, a App FIIS recalcula a participação de cada um. Por
-                    exemplo, se dois FIIs têm o mesmo peso (por exemplo, 10), a participação de cada um será de 50%. Se um
-                    FII tem peso 20 e outro 10, suas participações serão aproximadamente 66% e 33%, respectivamente.<br/>
+                    exemplo, se dois FIIs têm o mesmo peso (por exemplo, 10), a participação de cada um será de 50%. Se
+                    um
+                    FII tem peso 20 e outro 10, suas participações serão aproximadamente 66% e 33%,
+                    respectivamente.<br/>
                     Conforme você adiciona mais FIIs, a App FIIS ajusta a participação de cada um de acordo com o peso
                     total.<br/>
                     <img alt="Menu Notificações" class="img-thumbnail img-fluid"
@@ -945,7 +956,8 @@
                          style="margin: 5px 0 5px 0"><br/>
                     <b>Quando o peso total é 100%:</b><br/>
                     Se o somatório dos pesos dos FIIs na carteira for igual a 100%, a
-                    participação será igual ao peso. Nesse caso, a App FIIS exibe apenas a participação, pois ela reflete
+                    participação será igual ao peso. Nesse caso, a App FIIS exibe apenas a participação, pois ela
+                    reflete
                     diretamente o peso de cada FII.<br/>
                     <img alt="Menu Notificações" class="img-thumbnail img-fluid"
                          src="./appimg/v2/recomendada/particip_100.png"
