@@ -951,8 +951,55 @@
         <div class="col d-flex flex-column align-items-start gap-2 align-top">
             <div class="col d-flex flex-column align-items-start gap-2 align-top">
                 <p class="text-muted align-top">
+                    <b>Yield das Carteiras Recomendadas</b><br/>
+                    Com base na participação de cada FII cadastrado em uma carteira recomendada, a App FIIS calcula a
+                    média de yield da carteira nos últimos 6 meses. O resultado é apresentado em gráficos, como mostrado
+                    abaixo:<br/>
 
+                    <!-- Carousel -->
+                <div id="carouselYield" class="carousel slide" data-bs-ride="carousel"
+                     style="max-height: 400px; overflow: hidden;">
+                    <div class="carousel-inner" style="max-height: 400px;">
+                        <div class="carousel-item active">
+                            <div style="max-height: 400px; width: 100%; display: flex; justify-content: center; align-items: center;">
+                                <img src="./appimg/v2/recomendada/yield_rec_1.png"
+                                     class="d-block img-fluid img-thumbnail"
+                                     alt="Yield Conservador"
+                                     style="height: 100%; width: auto; object-fit: contain;">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div style="max-height: 400px; width: 100%; display: flex; justify-content: center; align-items: center;">
+                                <img src="./appimg/v2/recomendada/yield_rec_2.png"
+                                     class="d-block img-fluid img-thumbnail"
+                                     alt="Yield Moderado"
+                                     style="height: 100%; width: auto; object-fit: contain;">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div style="max-height: 400px; width: 100%; display: flex; justify-content: center; align-items: center;">
+                                <img src="./appimg/v2/recomendada/yield_rec_3.png"
+                                     class="d-block img-fluid img-thumbnail"
+                                     alt="Yield Agressivo"
+                                     style="height: 100%; width: auto; object-fit: contain;">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselYield"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselYield"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+                Por exemplo, um FII com um yield alto e uma participação elevada na carteira aumentará o yield total
+                da carteira recomendada, enquanto um FII com uma participação menor terá um impacto reduzido.
                 </p>
+
             </div>
         </div>
     </div>
