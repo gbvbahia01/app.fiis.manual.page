@@ -178,18 +178,18 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#landscape">
-                <i class="fa-solid fa-images fa-2xl"></i>
+                <i class="fa-solid fa-eye fa-2xl"></i>
                 <div>
-                    <strong class="d-block">Girando seu iPhone</strong>
-                    <small>Veja os gráficos na tebela principal</small>
+                    <strong class="d-block">Exibição: Visão</strong>
+                    <small>Altere as informações exibidas da sua carteira</small>
                 </div>
             </a>
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#order_table">
-                <i class="fa-solid fa-arrow-down-wide-short fa-2xl"></i>
+                <i class="fa-solid fa-sort fa-2xl"></i>
                 <div>
-                    <strong class="d-block">Ordenação FIIS</strong>
+                    <strong class="d-block">Exibição: Ordenação</strong>
                     <small>Altere a ordem apresentada do seus FIIS</small>
                 </div>
             </a>
@@ -476,48 +476,100 @@
 
 <div class="divider-gray"></div>
 <div class="container px-4 py-5" id="landscape">
-    <h3 class="pb-2 border-bottom">Girando seu iPhone</h3>
-
-    <div class="row row-cols-1 align-items-md-start g-5 py-2">
+    <h3 class="pb-2 border-bottom">Exibição: Ordenação</h3>
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
-                Utilizando um iPhone, com a opção de rotacionar <img alt="Panorama" class="rounded "
-                                                                     src="./appimg/Lock.png"> desbloqueada, rotacione
-                seu dispositivo para alterar a visualização da tabela principal.
-            </p>
-            <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/landscape.png">
-            <br/>
-            <p class="text-muted align-top">
-                Dependo da visão selecionada no menu, as informações contida nos gráficos podem ser diferentes:
-            </p>
-            <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/landscape2.png">
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2">
-
-            <p class="text-muted">
-                <b>Menu Visão</b>
+                No menu lateral, você pode alterar a forma como os seus FIIs são exibidos, escolhendo entre quatro
+                opções de visão:
+                <br/><br/>
+                <i>Para alterar a visão utilize o menu lateral:</i>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/menu_visao.png">
+                <br/><br/>
+                <b>Dividendo Yield</b>
                 <br/>
-                Para alterar a visão, abra o menu superior esquerdo e selecione a visão desejada.
-                Observe que a visão atual não aparece como opção no menu.
+                Esta visão exibe a data do último dividendo pago pelo FII e o percentual do Yield. Além disso, mostra o
+                valor que você recebeu no último pagamento e o total apurado, que representa a soma de todos os
+                dividendos que você recebeu desde a primeira compra do FII.<br/>
+                Na parte inferior, no iPhone (modo retrato) ou à direita no iPhone (modo paisagem) e iPads, é exibido um
+                gráfico com os últimos 6 percentuais de Yield.
+                <br/>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/v_yield.png"
+                     style="margin-bottom: 10px;">
+                <br/>
+                <b>Rentabilidade</b>
+                <br/>
+                Exibe o lucro ou prejuízo que você tem com o FII, com base no preço médio de compra e o valor atual de
+                mercado. Mostra também o total investido (soma de todas as compras menos as vendas) e a média de compra,
+                que é o preço médio de todas as compras do FII.
+                <br/>
+                Na parte inferior, no iPhone (modo retrato) ou à direita no iPhone (modo paisagem) e iPads, é exibido um
+                gráfico com as últimas 6 cotações mensais.
+                <br/>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/v_rent.png"
+                     style="margin-bottom: 10px;">
             </p>
-            <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/landscape3.png">
         </div>
+
+
+        <div class="col d-flex flex-column align-items-start gap-2 align-top" style="height:100% !important;">
+
+            <p class="text-muted align-top">
+                <b>Recomendados</b>
+                <br/>
+                Exibe o nome da carteira recomendada à qual o FII pertence. Se o FII não estiver em nenhuma carteira
+                recomendada, será exibido "Sem Recomendação". A visão também mostra a participação recomendada (Recom),
+                a participação real (Real) e a cotação recomendada.
+                <br/>
+                Na parte inferior, o gráfico mostra se o FII está acima ou abaixo da recomendação:
+            <ul>
+                <li>
+                    Sem Recomendação: mostra um gráfico do espaço ocupado pelos FIIs que não têm recomendação.
+                </li>
+                <li>
+                    Abaixo da Recomendação: exibe em branco o valor que falta para completar a recomendação e em verde o
+                    valor já ocupado na carteira.
+                </li>
+                <li>
+                    Acima da Recomendação: exibe em laranja o valor excedido e em verde o valor recomendado.
+                </li>
+            </ul>
+
+            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/v_rec.png"
+                 style="margin-bottom: 10px;">
+            <br/>
+            <b>Gráfico Yield</b>
+
+            Essa visão exibe o histórico de yield do FII, sem outras informações adicionais.
+            <br/>
+            No iPhone (modo retrato), são exibidos os últimos 6 yields:
+
+            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/v_chart_r.png"
+                 style="margin-bottom: 10px;">
+            <br/>
+            Enquanto no iPhone (modo paisagem) e iPads, são exibidos os últimos 14 yields.
+            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/v_chart_p.png"
+                 style="margin-bottom: 10px;">
+            </p>
+        </div>
+
     </div>
 </div>
 
 <div class="divider-gray"></div>
 <!-- Horizontal img-->
 <div class="container px-4 py-5" id="order_table">
-    <h3 class="pb-2 border-bottom">Ordenação FIIS</h3>
+    <h3 class="pb-2 border-bottom">Exibição: Ordenação</h3>
     <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
         <div class="col d-flex flex-column align-items-start gap-2">
             <p class="text-muted align-top">
                 A ordem em que os seus FIIs são apresentados na tabela principal pode ser alterada. São 5
                 possibilidades: por segmento, por data de recebimento de dividendos, por ordem alfabética, por
                 rentabilidade e pelas carteiras recomendadas.
-                <br/>
-                <br/>
+                <br/><br/>
+                <i>Para alterar a ordenação utilize o menu lateral:</i>
+                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/menu.png">
+                <br/><br/>
                 <b>Segmento</b>
                 <br/>
                 Os FIIS são ordenados em ordem alfabética agrupados pelo segmento que pertencem.
@@ -531,10 +583,6 @@
                 <br/>
                 <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/order_dt.png"
                      style="margin-bottom: 10px;">
-            </p>
-            <p class="text-muted align-top">
-            Para alterar a ordenação utilize o menu lateral:
-            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/menu.png">
             </p>
         </div>
 
