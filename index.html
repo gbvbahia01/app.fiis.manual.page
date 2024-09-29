@@ -126,6 +126,35 @@
             margin-top: -10px;
             margin-bottom: 5px;
         }
+
+
+        .icon-fixed {
+            width: 40px; /* Definindo uma largura fixa para os ícones */
+            height: 40px; /* Definindo uma altura fixa para os ícones */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-hover-light {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            gap: 20px; /* Espaço entre o ícone e o texto */
+        }
+
+        .fa-2xl {
+            font-size: 24px; /* Ajuste para todos os ícones terem o mesmo tamanho */
+        }
+
+        .d-block {
+            line-height: 1.2; /* Ajustando o espaçamento entre as linhas para o texto */
+        }
+
+        /* Garantindo o mesmo tamanho de cada bloco */
+        .rounded-2 {
+            padding: 10px 15px; /* Ajustando o padding interno para manter a simetria */
+        }
     </style>
 
     <!-- Custom styles for this template -->
@@ -142,7 +171,9 @@
         <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-2 py-1">
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#first_access">
-                <i class="fa-solid fa-plus fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-solid fa-plus fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Novo por Aqui</strong>
                     <small>Cadastrando o primeiro FII</small>
@@ -151,7 +182,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#menus_app">
-                <i class="fa-regular fa-hand-point-right fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-regular fa-hand-point-right fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Menu na Tabela</strong>
                     <small>Onde ficam os botões da App?</small>
@@ -160,7 +193,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#info_windows">
-                <i class="fa-solid fa-circle-question fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-solid fa-circle-question fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Janelas Informativas</strong>
                     <small>Veja mais informações da sua carteria</small>
@@ -169,7 +204,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#interact_app">
-                <i class="fa-solid fa-hand-pointer fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-solid fa-hand-pointer fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Interagindo com a App</strong>
                     <small>Descobrindo e maximizando a experiência interativa na App</small>
@@ -178,7 +215,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#landscape">
-                <i class="fa-solid fa-eye fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-solid fa-eye fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Exibição: Visão</strong>
                     <small>Altere as informações exibidas da sua carteira</small>
@@ -187,7 +226,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#order_table">
-                <i class="fa-solid fa-sort fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-solid fa-sort fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Exibição: Ordenação</strong>
                     <small>Altere a ordem apresentada do seus FIIS</small>
@@ -196,7 +237,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#login-info">
-                <i class="fa-solid fa-id-card fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-solid fa-id-card fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Efetuando Login</strong>
                     <small>A importância de efetuar login na App</small>
@@ -205,8 +248,10 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#layout-info">
-                <i class="fa-solid fa-tablet-screen-button fa-xl"></i>
-                <i class="fa-solid fa-mobile-screen fa-xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-solid fa-tablet-screen-button fa-xl"></i>
+                    <i class="fa-solid fa-mobile-screen fa-xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Tamanho da Tela</strong>
                     <small>Diferentes dispositivos diferente apresentação</small>
@@ -215,7 +260,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#dt_bs_dt_pg">
-                <i class="fa-solid fa-calendar-days fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-solid fa-calendar-days fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Data Base x Data Pagamento</strong>
                     <small>Diferença entre a data base e pagamento</small>
@@ -224,7 +271,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#subscription">
-                <i class="far fa-calendar-alt fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="far fa-calendar-alt fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Subscrição</strong>
                     <small>Porque apareceu um calendário do lado do FII?</small>
@@ -233,7 +282,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#notifications">
-                <i class="far fa-paper-plane fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="far fa-paper-plane fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Notificações</strong>
                     <small>Fique atento para os Dividendos e Subscrições</small>
@@ -242,7 +293,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#calendar">
+                <div class="icon-fixed">
                 <i class="fa-solid fa-calendar-day fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Calendário</strong>
                     <small>Entendendo a sinconização com Calendário</small>
@@ -251,7 +304,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#recommended_doc">
-                <i class="fa-solid fa-rectangle-list fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-solid fa-rectangle-list fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Carteira Recomendada</strong>
                     <small>Cadastre uma carteira de referência</small>
@@ -260,7 +315,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#renamed_ticket">
-                <i class="fas fa-spell-check fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fas fa-spell-check fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">FII Renomeado</strong>
                     <small>O que fazer quando um FII altera o código de negociação</small>
@@ -269,7 +326,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#split_app">
-                <i class="fas fa-object-group fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fas fa-object-group fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Agrupamento/Desdobramento</strong>
                     <small>O que fazer quando um FII precisa de ajustes nas transações</small>
@@ -278,7 +337,9 @@
 
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#buy_app">
-                <i class="fa-solid fa-credit-card fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-solid fa-credit-card fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Cadastro Ilimitado</strong>
                     <small>Cadastro Ilimitado é Assinatura?</small>
@@ -288,7 +349,9 @@
             <!-- Sempre por ultimo -->
             <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
                href="#remove_app">
-                <i class="fa-solid fa-hammer fa-2xl"></i>
+                <div class="icon-fixed">
+                    <i class="fa-solid fa-hammer fa-2xl"></i>
+                </div>
                 <div>
                     <strong class="d-block">Resolvendo Problemas</strong>
                     <small>Desinstalar e instalar a App FIIS</small>
@@ -937,14 +1000,14 @@
             </p>
             <p class="text-muted align-top">
                 Para acessar a tela de cadastro das carteiras recomendadas, utilize o menu lateral da App. Selecione a
-                opção Recomendação dentro da seção Mais FIIS.
+                opção Recomendação dentro da seção Mais FIIS.<br/>
                 <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/v2/recomendada/menu_rec.png"
                      style="margin: 5px 0 5px 0"><br/>
             </p>
 
             <p class="text-muted align-top">
                 Ao acessar essa tela, você poderá adicionar uma nova carteira recomendada clicando no ícone <b>+</b> no
-                canto superior direito da tela.
+                canto superior direito da tela.<br/>
                 <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/v2/recomendada/add_rec.png"
                      style="margin: 5px 0 5px 0"><br/><br/>
                 <b>Tela de Cadastro de Recomendação</b><br/>
