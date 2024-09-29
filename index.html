@@ -1009,26 +1009,27 @@
                 Ao acessar essa tela, você poderá adicionar uma nova carteira recomendada clicando no ícone <b>+</b> no
                 canto superior direito da tela.<br/>
                 <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/v2/recomendada/add_rec.png"
-                     style="margin: 5px 0 5px 0"><br/><br/>
+                     style="margin: 5px 0 5px 0" /><br/><br/>
                 <b>Tela de Cadastro de Recomendação</b><br/>
                 <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/v2/recomendada/rec_add_n.png"
-                     style="margin: 5px 0 5px 0"><br/>
-            <ol class="text-muted">
-                <li><strong>Código do FII</strong>: Informe o código do Fundo de Investimento Imobiliário (FII) que
-                    deseja adicionar à carteira.
-                </li>
-                <li><strong>Seleção da Carteira</strong>: Selecione em qual das três carteiras recomendadas o FII será
-                    adicionado. Os nomes padrão são Conservador, Moderado, e Agressivo, mas podem ser alterados.
-                </li>
-                <li><strong>Valor Recomendado</strong>: Informe o valor-limite recomendado para a compra, ou deixe R$
-                    0,00 se não houver um limite.
-                </li>
-                <li><strong>Peso na Carteira</strong>: Defina o peso que o FII terá na carteira selecionada. Caso a soma
-                    de todos os pesos da carteira seja 100%, a App exibirá apenas a participação, pois ela será
-                    equivalente ao peso.
-                </li>
-            </ol>
+                     style="margin: 5px 0 5px 0" /><br/>
             </p>
+                <ol class="text-muted align-top">
+                    <li><strong>Código do FII</strong>: Informe o código do Fundo de Investimento Imobiliário (FII) que
+                        deseja adicionar à carteira.
+                    </li>
+                    <li><strong>Seleção da Carteira</strong>: Selecione em qual das três carteiras recomendadas o FII será
+                        adicionado. Os nomes padrão são Conservador, Moderado, e Agressivo, mas podem ser alterados.
+                    </li>
+                    <li><strong>Valor Recomendado</strong>: Informe o valor-limite recomendado para a compra, ou deixe R$
+                        0,00 se não houver um limite.
+                    </li>
+                    <li><strong>Peso na Carteira</strong>: Defina o peso que o FII terá na carteira selecionada. Caso a soma
+                        de todos os pesos da carteira seja 100%, a App exibirá apenas a participação, pois ela será
+                        equivalente ao peso.
+                    </li>
+                </ol>
+
             <p class="text-muted align-top">
                 <b>Renomeando as Carteiras Recomendadas</b><br/>
                 Na tela de Recomendação, toque no ícone de carteira no menu superior direito, conforme mostrado na
@@ -1041,12 +1042,11 @@
                 nomes podem ter entre 3 e 12 caracteres.<br/>
 
                 Após escolher os novos nomes, basta confirmar para salvar as alterações.
-                </ol>
             </p>
         </div>
 
-        <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-            <div class="col d-flex flex-column align-items-start gap-2">
+        <div class="col d-flex flex-column align-items-start gap-2 align-top">
+
 
                 <p class="text-muted align-top">
                     <b>Peso e Participação - Como Funciona</b><br/>
@@ -1080,7 +1080,7 @@
                     Com base na participação de cada FII cadastrado em uma carteira recomendada, a App FIIS calcula a
                     média de yield da carteira nos últimos 6 meses. O resultado é apresentado em gráficos, como mostrado
                     abaixo:<br/>
-
+                </p>
                     <!-- Carousel -->
                 <div id="carouselYield" class="carousel slide" data-bs-interval="false"
                      style="overflow: hidden;">
@@ -1123,13 +1123,13 @@
                 </div>
                 Por exemplo, um FII com um yield alto e uma participação elevada na carteira aumentará o yield total
                 da carteira recomendada, enquanto um FII com uma participação menor terá um impacto reduzido.
-                </p>
+
                 <p class="text-muted align-top">
                     <b>Distribuição por Segmento das Carteiras Recomendadas</b><br/>
                     Quando você cadastra uma carteira recomendada, a App FIIS calcula e exibe a distribuição da carteira
                     por
                     segmento, como mostrado abaixo:<br/>
-
+                </p>
                     <!-- Carousel -->
                 <div id="carouselDist" class="carousel slide" data-bs-interval="false">
                 <div class="carousel-inner" style="max-width: 500px;">
@@ -1159,7 +1159,7 @@
                         <span class="visually-hidden">Próximo</span>
                     </button>
                 </div>
-                </p>
+
                 <p>
                     <b>Distribuição dos FIIs nas Carteiras Recomendadas</b><br/>
                     Quando você cadastra uma ou mais carteiras recomendadas, a App FIIS exibe este gráfico, que mostra
@@ -1170,7 +1170,6 @@
                          style="width: 500px; object-fit: contain;">
                 </p>
 
-            </div>
         </div>
     </div>
 </div>
