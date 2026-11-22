@@ -1,1491 +1,406 @@
 <!doctype html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="pt-BR">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta content="" name="description">
-
-    <!-- Favicon -->
-    <link href="./assets/favicon/apple-icon-57x57.png" rel="apple-touch-icon" sizes="57x57">
-    <link href="./assets/favicon/apple-icon-60x60.png" rel="apple-touch-icon" sizes="60x60">
-    <link href="./assets/favicon/apple-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-    <link href="./assets/favicon/apple-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
-    <link href="./assets/favicon/apple-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-    <link href="./assets/favicon/apple-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
-    <link href="./assets/favicon/apple-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
-    <link href="./assets/favicon/apple-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
-    <link href="./assets/favicon/apple-icon-180x180.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="./assets/favicon/android-icon-192x192.png" rel="icon" sizes="192x192" type="image/png">
-    <link href="./assets/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="./assets/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png">
-    <link href="./assets/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="./assets/favicon/manifest.json" rel="manifest">
-    <meta content="#ffffff" name="msapplication-TileColor">
-    <meta content="./assets/favicon/ms-icon-144x144.png" name="msapplication-TileImage">
-    <meta content="#ffffff" name="theme-color">
-
-    <title>App FIIS</title>
-
-    <link href="https://getbootstrap.com/docs/5.3/examples/features/" rel="canonical">
-
-
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        .divider-gray {
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        .divider-gray#menupage {
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        #myBtn {
-            display: none; /* Hidden by default */
-            position: fixed; /* Fixed/sticky position */
-            bottom: 20px; /* Place the button at the bottom of the page */
-            right: 30px; /* Place the button 30px from the right */
-            z-index: 99; /* Make sure it does not overlap */
-            border: none; /* Remove borders */
-            outline: none; /* Remove outline */
-            background-color: #1B262C; /* Set a background color */
-            color: white; /* Text color */
-            cursor: pointer; /* Add a mouse pointer on hover */
-            padding: 10px; /* Some padding */
-            border-radius: 10px; /* Rounded corners */
-            font-size: 18px; /* Increase font size */
-        }
-
-        #myBtn:hover {
-            background-color: #555; /* Add a dark-grey background on hover */
-        }
-
-        .container-title {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-        }
-
-        .version {
-            font-size: 14px;
-        }
-
-        .highlight {
-            font-weight: bold;
-            color: red;
-            margin-top: -10px;
-            margin-bottom: 5px;
-        }
-
-
-        .icon-fixed {
-            width: 40px; /* Definindo uma largura fixa para os ícones */
-            height: 40px; /* Definindo uma altura fixa para os ícones */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .btn-hover-light {
-            display: flex;
-            align-items: center;
-            justify-content: start;
-            gap: 20px; /* Espaço entre o ícone e o texto */
-        }
-
-        .fa-2xl {
-            font-size: 24px; /* Ajuste para todos os ícones terem o mesmo tamanho */
-        }
-
-        .d-block {
-            line-height: 1.2; /* Ajustando o espaçamento entre as linhas para o texto */
-        }
-
-        /* Garantindo o mesmo tamanho de cada bloco */
-        .rounded-2 {
-            padding: 10px 15px; /* Ajustando o padding interno para manter a simetria */
-        }
-    </style>
-
-    <!-- Custom styles for this template -->
-    <link href="features.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2d4c97df86.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Manual do App FIIS para iPhone e iPad. Aprenda a cadastrar transações, acompanhar seus FIIs e recuperar sua carteira.">
+    <meta name="theme-color" content="#14262d">
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="stylesheet" href="features.css">
+    <title>Ajuda App FIIS</title>
 </head>
-<body>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-arrow-up fa-lg"></i></i>
-</button>
-
-<div class="divider-gray"></div>
-<div class="container px-4 py-5">
-    <div class="dropdown-menu position-static d-flex align-items-stretch p-3 rounded-3 shadow-lg w-600px">
-        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-2 py-1">
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#first_access">
-                <div class="icon-fixed">
-                    <i class="fa-solid fa-plus fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Novo por Aqui</strong>
-                    <small>Cadastrando o primeiro FII</small>
-                </div>
+<body id="inicio">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <header class="site-header">
+        <div class="shell header-inner">
+            <a class="wordmark" href="#inicio">
+                <img src="logo_64.png" alt="" width="36" height="36">
+                App FIIS
             </a>
+            <a class="header-link" href="#menupage">Tópicos <span aria-hidden="true">↓</span></a>
+        </div>
+    </header>
 
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#menus_app">
-                <div class="icon-fixed">
-                    <i class="fa-regular fa-hand-point-right fa-2xl"></i>
-                </div>
+    <main id="conteudo" tabindex="-1">
+        <section class="intro" aria-labelledby="titulo">
+            <div class="shell intro-inner">
                 <div>
-                    <strong class="d-block">Menu na Tabela</strong>
-                    <small>Onde ficam os botões da App?</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#info_windows">
-                <div class="icon-fixed">
-                    <i class="fa-solid fa-circle-question fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Janelas Informativas</strong>
-                    <small>Veja mais informações da sua carteira</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#interact_app">
-                <div class="icon-fixed">
-                    <i class="fa-solid fa-hand-pointer fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Interagindo com a App</strong>
-                    <small>Descobrindo e maximizando a experiência interativa na App</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#landscape">
-                <div class="icon-fixed">
-                    <i class="fa-solid fa-eye fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Exibição: Visão</strong>
-                    <small>Altere as informações exibidas da sua carteira</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#order_table">
-                <div class="icon-fixed">
-                    <i class="fa-solid fa-sort fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Exibição: Ordenação</strong>
-                    <small>Altere a ordem apresentada do seus FIIS</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#login-info">
-                <div class="icon-fixed">
-                    <i class="fa-solid fa-id-card fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Efetuando Login</strong>
-                    <small>A importância de efetuar login na App</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#layout-info">
-                <div class="icon-fixed">
-                    <i class="fa-solid fa-tablet-screen-button fa-xl"></i>
-                    <i class="fa-solid fa-mobile-screen fa-xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Tamanho da Tela</strong>
-                    <small>Diferentes dispositivos diferente apresentação</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#dt_bs_dt_pg">
-                <div class="icon-fixed">
-                    <i class="fa-solid fa-calendar-days fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Data Base x Data Pagamento</strong>
-                    <small>Diferença entre a data base e pagamento</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#subscription">
-                <div class="icon-fixed">
-                    <i class="far fa-calendar-alt fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Subscrição</strong>
-                    <small>Porque apareceu um calendário do lado do FII?</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#notifications">
-                <div class="icon-fixed">
-                    <i class="far fa-paper-plane fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Notificações</strong>
-                    <small>Fique atento para os Dividendos e Subscrições</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#calendar">
-                <div class="icon-fixed">
-                <i class="fa-solid fa-calendar-day fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Calendário</strong>
-                    <small>Entendendo a sinconização com Calendário</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#recommended_doc">
-                <div class="icon-fixed">
-                    <i class="fa-solid fa-rectangle-list fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Carteira Recomendada</strong>
-                    <small>Cadastre uma carteira de referência</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#renamed_ticket">
-                <div class="icon-fixed">
-                    <i class="fas fa-spell-check fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">FII Renomeado</strong>
-                    <small>O que fazer quando um FII altera o código de negociação</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#split_app">
-                <div class="icon-fixed">
-                    <i class="fas fa-object-group fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Agrupamento/Desdobramento</strong>
-                    <small>O que fazer quando um FII precisa de ajustes nas transações</small>
-                </div>
-            </a>
-
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#buy_app">
-                <div class="icon-fixed">
-                    <i class="fa-solid fa-credit-card fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Cadastro Ilimitado</strong>
-                    <small>Cadastro Ilimitado é Assinatura?</small>
-                </div>
-            </a>
-
-            <!-- Sempre por ultimo -->
-            <a class="btn btn-hover-light rounded-2 d-flex align-items-center gap-3 py-2 px-3 lh-sm text-start"
-               href="#remove_app">
-                <div class="icon-fixed">
-                    <i class="fa-solid fa-hammer fa-2xl"></i>
-                </div>
-                <div>
-                    <strong class="d-block">Resolvendo Problemas</strong>
-                    <small>Desinstalar e instalar a App FIIS</small>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<div class="divider-gray" id="menupage"></div>
-<!-- first_access -->
-<div class="container-sm px-4 py-2 align-top" id="first_access">
-    <h3 class="pb-2 border-bottom">Cadastrando seu Primeiro FII</h3>
-
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                Para cadastrar o seu primeiro FII basta tocar na imagem <i class="fa-solid fa-plus fa-lg"
-                                                                           style="color: black;"></i>
-                <i>(mais)</i> no canto superior direito.<br/>
-
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/first_access.png">
-            </p>
-        </div>
-
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top">
-            <p class="text-muted align-top">
-                Os 3 campos superiores, código do FII, preço por unidade e quantidade, são sugestivos e possuem ajuda
-                que podem ser observada ao tocar a <i class="fa-solid fa-question" style="color: black;"></i> <i>(interrogação)</i>.
-                <br/>
-                Você deve selecionar se foi uma operação <b>compra ou venda</b>.
-                <br/>
-                A <b>data da transação</b> deve ser informada no calendário abaixo. É através da data da transação que a
-                App irá saber o valor no histórico da sua carteira e os dividendos que teve direito, mês a mês.
-                <br/>
-                Após preencher todas as informações, aperte o <i class="fa-solid fa-floppy-disk"
-                                                                 style="color: black;"></i> <i>(disquete)</i> no canto
-                superior direito para salvar a mesma.
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/add_transaction.png">
-            </p>
-
-        </div>
-    </div>
-</div>
-
-
-<div class="divider-gray"></div>
-<!-- Table Menu -->
-<div class="container-sm px-4 py-2 align-top" id="menus_app" style="min-height:0px !important;">
-    <h3 class="pb-2 border-bottom">Menu na Tabela</h3>
-
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                As tabelas principais da App FIIS possuem menus de ação para várias funcionalidades. Arraste a linha
-                para a direita <i class="fa-regular fa-hand-point-right"></i> ou esquerda <i
-                    class="fa-regular fa-hand-point-left"></i> para visualizar.
-                <br/>
-
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/menu/fiis_menu.png">
-            </p>
-        </div>
-
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top" style="height:100% !important;">
-
-            <p class="text-muted align-top">
-                Ao selecionar um FII na tabela principal, uma nova tela é exibida.
-                Nesta tela é possível editar ou remover uma transação caso seja necessário.<br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/menu/fii_menu.png">
-            </p>
-
-        </div>
-    </div>
-</div>
-
-
-<div class="divider-gray"></div>
-<!-- Janelas Informativas -->
-<div class="container-sm px-4 py-2 align-top" id="info_windows" style="min-height:0px !important;">
-    <h3 class="pb-2 border-bottom">Janelas Informativas</h3>
-
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                App FIIS apresenta muitas informações sobre a sua carteira e de cada FII. Essas informações são
-                apresentadas nas janelas informativas da sua carteira e individualmente.
-                <br/>
-
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/window_moving_1.png"
-                     style="margin-bottom: 10px;">
-                <br/>
-                Para alterar as janelas faça o movimento da direita para esquerda:
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/window_moving_2.png">
-            </p>
-        </div>
-
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top" style="height:100% !important;">
-
-            <p class="text-muted align-top">
-                <b>Obtendo Ajuda</b>
-                <br/>
-                As janelas informativas possuem um botão que apresenta um texto de ajuda sobre o que cada uma contém.
-                Basta tocar na <i class="fa-solid fa-circle-question" style="color: black"></i>
-                <i>(interrogação)</i><br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/window_moving_3.png">
-
-                para que o texto seja apresentado:<br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/window_moving_4.png">
-            </p>
-
-        </div>
-    </div>
-</div>
-
-<div class="divider-gray"></div>
-<!-- Table Menu -->
-<div class="container-sm px-4 py-2 align-top" id="interact_app" style="min-height:0px !important;">
-    <h3 class="pb-2 border-bottom">Interagindo com a App</h3>
-
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                Algumas janelas informativas são também interativas, ou seja, você pode realizar algumas ações nas
-                mesmas.
-                <br/><br/>
-                <b>Extrato</b><br/>
-                No extrato, você pode visualizar os dados dos últimos três meses nas janelas de informações.
-                <br/>Para fazer isso, basta tocar na janela e deslizar o dedo para cima e/ou para baixo, permitindo que
-                o histórico correspondente seja exibido.
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/extrato.png"
-                     style="margin: 5px;"><br/>
-                Para visualizar o histórico completo do Extrato, você pode exportá-lo para um arquivo Excel. Na aba
-                'Extrato', você terá acesso a todo o histórico de recebimentos com base nas transações que foram
-                cadastradas na App FIIS.<br/>
-                Para exportar selecione no menu a opção: <i>Excel App FIIS</i><br/>
-            </p>
-            <p class="text-muted align-top">
-                <b>Distribuição</b><br/>
-                É possível rotacionar o gráfico de pizza da distribuição para uma visualização diferente.<br/>
-                Para fazer isso, toque com dois dedos dentro do gráfico e gire os dedos. Observe que a pizza girará no
-                mesmo sentido, movendo os valores e proporcionando uma nova perspectiva visual.
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/pizza_1.png"
-                     style="margin: 5px;"><br/>
-                Após rotacionar:
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/pizza_2.png"
-                     style="margin: 5px;"><br/>
-            </p>
-        </div>
-
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top" style="height:100% !important;">
-            <p class="text-muted align-top">
-                <b>Transações</b><br/>
-                Nas transações, você pode visualizar os dados dos últimos doze meses nas janelas de informações.
-                <br/>Para fazer isso, basta tocar na janela e deslizar o dedo para cima e/ou para baixo, permitindo que
-                o histórico correspondente seja exibido.
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/transacoes.png"
-                     style="margin: 5px;"><br/>
-                Para visualizar o histórico completo das Transações, você pode exportar para um arquivo Excel. Na aba
-                'Transações', você terá acesso a todo o histórico com base nas transações que foram cadastradas na App
-                FIIS.<br/>
-                Para exportar selecione no menu a opção: <i>Excel App FIIS</i><br/>
-            </p>
-
-            <p class="text-muted align-top">
-                <b>Últimos Dividendos</b><br/>
-                Ao selecionar um FII na tabela principal e navegar pelas janelas, você terá acesso aos dividendos pagos
-                nos últimos 12 meses pelo FII selecionado.<br/>
-                Devido ao tamanho limitado da janela, nem todos os doze meses cabem na visualização inicial.<br/>
-                Para ver o histórico completo, toque na janela e deslize o dedo para cima e/ou para baixo, permitindo
-                que o histórico correspondente seja exibido.
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/dividendos.png"
-                     style="margin: 5px;"><br/>
-            </p>
-
-        </div>
-    </div>
-</div>
-
-<div class="divider-gray"></div>
-<div class="container px-4 py-5" id="landscape">
-    <h3 class="pb-2 border-bottom">Exibição: Visão</h3>
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                No menu lateral, você pode alterar a forma como os seus FIIs são exibidos, escolhendo entre quatro
-                opções de visão:
-                <br/><br/>
-                <i>Para alterar a visão utilize o menu lateral:</i>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/menu_visao.png">
-                <br/><br/>
-                <b>Dividendo Yield</b>
-                <br/>
-                Esta visão exibe a data do último dividendo pago pelo FII e o percentual do Yield. Além disso, mostra o
-                valor que você recebeu no último pagamento e o total apurado, que representa a soma de todos os
-                dividendos que você recebeu desde a primeira compra do FII.<br/>
-                Na parte inferior, no iPhone (modo retrato) ou à direita no iPhone (modo paisagem) e iPads, é exibido um
-                gráfico com os últimos 6 percentuais de Yield.
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/v_yield.png"
-                     style="margin-bottom: 10px;">
-                <br/>
-                <b>Rentabilidade</b>
-                <br/>
-                Exibe o lucro ou prejuízo que você tem com o FII, com base no preço médio de compra e o valor atual de
-                mercado. Mostra também o total investido (soma de todas as compras menos as vendas) e a média de compra,
-                que é o preço médio de todas as compras do FII.
-                <br/>
-                Na parte inferior, no iPhone (modo retrato) ou à direita no iPhone (modo paisagem) e iPads, é exibido um
-                gráfico com as últimas 6 cotações mensais.
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/v_rent.png"
-                     style="margin-bottom: 10px;">
-            </p>
-        </div>
-
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top" style="height:100% !important;">
-
-            <p class="text-muted align-top">
-                <b>Recomendados</b>
-                <br/>
-                Exibe o nome da carteira recomendada à qual o FII pertence. Se o FII não estiver em nenhuma carteira
-                recomendada, será exibido "Sem Recomendação". A visão também mostra a participação recomendada (Recom),
-                a participação real (Real) e a cotação recomendada.
-                <br/>
-                Na parte inferior, o gráfico mostra se o FII está acima ou abaixo da recomendação:
-            <ul>
-                <li>
-                    Sem Recomendação: mostra um gráfico do espaço ocupado pelos FIIs que não têm recomendação.
-                </li>
-                <li>
-                    Abaixo da Recomendação: exibe em branco o valor que falta para completar a recomendação e em verde o
-                    valor já ocupado na carteira.
-                </li>
-                <li>
-                    Acima da Recomendação: exibe em laranja o valor excedido e em verde o valor recomendado.
-                </li>
-            </ul>
-
-            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/v_rec.png"
-                 style="margin-bottom: 10px;">
-            <br/>
-            <b>Gráfico Yield</b>
-
-            Essa visão exibe o histórico de yield do FII, sem outras informações adicionais.
-            <br/>
-            No iPhone (modo retrato), são exibidos os últimos 6 yields:
-
-            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/v_chart_r.png"
-                 style="margin-bottom: 10px;">
-            <br/>
-            Enquanto no iPhone (modo paisagem) e iPads, são exibidos os últimos 14 yields.
-            <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/v_chart_p.png"
-                 style="margin-bottom: 10px;">
-            </p>
-        </div>
-
-    </div>
-</div>
-
-<div class="divider-gray"></div>
-<!-- Horizontal img-->
-<div class="container px-4 py-5" id="order_table">
-    <h3 class="pb-2 border-bottom">Exibição: Ordenação</h3>
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                A ordem em que os seus FIIs são apresentados na tabela principal pode ser alterada. São 5
-                possibilidades: por segmento, por data de recebimento de dividendos, por ordem alfabética, por
-                rentabilidade e pelas carteiras recomendadas.
-                <br/><br/>
-                <i>Para alterar a ordenação utilize o menu lateral:</i>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/menu.png">
-                <br/><br/>
-                <b>Segmento</b>
-                <br/>
-                Os FIIS são ordenados em ordem alfabética agrupados pelo segmento que pertencem.
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/order_seg.png"
-                     style="margin-bottom: 10px;">
-                <br/>
-                <b>Data de recebimento de dividendos</b>
-                <br/>
-                Os FIIS são ordenados em ordem alfabética agrupados pela data que pagaram ou pagarão dividendos.
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/order_dt.png"
-                     style="margin-bottom: 10px;">
-            </p>
-        </div>
-
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top" style="height:100% !important;">
-
-            <p class="text-muted align-top">
-                <b>Rentabilidade</b>
-                <br/>
-                Os FIIS são ordenados conforme o percentual de rentabilidade. Valor de compra comparado com o valor
-                atual.
-                A ordenação é do menos rentável para o mais rentável.
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/order_rent.png"
-                     style="margin-bottom: 10px;">
-                <br/>
-                <b>Alfabética</b>
-                <br/>
-                Ordenado conforme o código de negociação dos FIIS na B3.
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/order_fii.png"
-                     style="margin-bottom: 10px;">
-                <br/>
-                <b>Carteiras Recomendadas</b>
-                <br/>
-                Os FIIs são ordenados em ordem alfabética, agrupados pela carteira recomendada a que pertencem. Os que
-                não estão em nenhuma carteira recomendada aparecerão no grupo "Sem Recomendação".
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/order/order_rec.png"
-                     style="margin-bottom: 10px;">
-            </p>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="divider-gray"></div>
-<div class="container-sm px-4 py-2 align-top" id="login-info">
-    <h3 class="pb-2 border-bottom">Efetuando Login</h3>
-
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                Ao utilizar a App FIIS pela primeira vez, você entra como usuário anônimo. Ação recomendada para você
-                conhecer o aplicativo antes de ter que efetuar o Login.
-                <br/>
-                Após se familiarizar com a App FIIS, cadastrando alguns FIIS, é importante realizar o login para que
-                suas transações cadastradas possam ser recuperadas caso ocorra troca de aparelho.
-                <br/>
-                Para efetuar login selecione no menu a opção Efetuar Login:<br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/login_menu.png"
-                     style="margin-top: 5px;">
-            </p>
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top">
-            <p class="text-muted align-top">
-                Depois selecione logar com sua conta Apple ou com uma conta Google.<br/>
-                Lembrando que para recuperar os dados posteriormente deverá selecionar com a mesma conta que entrou
-                inicialmente.<br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/login_tela.png"
-                     style="margin-top: 5px;">
-            </p>
-        </div>
-    </div>
-
-    <h3 class="pb-2 border-bottom">Recuperando os Dados</h3>
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                Ao abrir a App em um segundo dispositivo pela primeira vez, selecione a opção Efetuar Login no menu.
-                <br/>
-                Antes de selecionar novamente a conta que utilizou previamente para logar, efetue o Logout do modo
-                anônimo para então selecionar a conta que havia utilizado anteriormente.
-            </p>
-        </div>
-        <div class="col d-flex flex-column align-items-start gap-2 align-top">
-            <p class="text-muted align-top">
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/login_logout.png"
-                     style="margin-top: 5px;">
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="divider-gray"></div>
-<div class="container-sm px-4 py-2 align-top" id="layout-info">
-    <h3 class="pb-2 border-bottom">Tamanho da Tela</h3>
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                A apresentação da App FIIS varia conforme o dispositivo.
-                <br/>
-                <b>Em um iPhone:</b>
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/v2/visao/all_screen.png"
-                     style="margin-top: 5px;" width="350">
-            </p>
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top">
-            <p class="text-muted align-top">
-                <b>Em um iPad:</b>
-                <br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/iPad.png"
-                     style="margin-top: 5px;" width="1635">
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="divider-gray"></div>
-<div class="container px-4 py-5" id="dt_bs_dt_pg">
-    <h3 class="pb-2 border-bottom">Data Base x Data Pagamento</h3>
-
-    <div class="row row-cols-1 align-items-md-start g-5 py-2">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                A data base é a data a ser considerada para ser apto a receber dividendos.
-                A data que você tem que terminar o dia com a posse de um ou mais títulos.
-                Também conhecida como Data-com. <br/>
-                Alguns FIIS possuem a data base e a data pagamento no mesmo mês.<br/>
-                Nesse exemplo a data base e pagamento são em março:<br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/dt_base_dt_pgto_msm2.png"
-                     style="margin-top: 5px;">
-            </p>
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                Alguns FIIS possuem a data base e a data pagamento em meses diferentes.<br/>
-                Nesse exemplo a data base é em fevereiro e pagamento em março:<br/>
-                <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid"
-                     src="./appimg/dt_base_dt_pgto_dif.png" style="margin-top: 5px; margin-bottom: 5px;">
-                <br/>
-                Repare que o gráfico de dividendos, que é baseado na data base, está apresentando valores para os dois
-                FIIS no mês relativo à data base.<br/>
-                Não considera março para o segundo, porque a data definida a ter direito ao dividendo é em fevereiro.
-                Se você vender o FII um dia depois da data base, o direito ao dividendo não é perdido, você receberá na
-                data de pagamento do FII o dividendo declarado.
-
-            </p>
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <div class="col d-flex flex-column align-items-start gap-2">
-                <p class="text-muted align-top">
-                    A medida que o mês avança, mais FIIS vão declarando data base ao longo do mês e, até que chegue no
-                    último dia útil do mês, o gráfico de Dividendos e Yeld vão sofrendo alterações.
-                    <br/>
-                    Gráficos relativos à data base:<br/>
-                    <img alt="Data Base x Data Pagamento" class="img-thumbnail img-fluid" src="./appimg/dt_yield.png"
-                         style="margin-top: 5px;">
-                </p>
-            </div>
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <div class="col d-flex flex-column align-items-start gap-2">
-                <p class="text-muted align-top">
-                    <b>Fazendo uma analogia com o salário mensal de um trabalhador.</b><br/>
-                    Algumas empresas pagam os salários no último dia útil do mês, o que significa que os trabalhadores
-                    recebem seus salários no mesmo mês em que trabalharam.<br/>
-                    Quando comparamos a referência salarial com o mês de pagamento nessas empresas, eles sempre serão
-                    iguais. Esses são os FIIS que têm a data-base e a data de pagamento dentro do mesmo mês.<br/>
-
-                    Por outro lado, existem empresas que pagam os salários no quinto dia útil do mês subsequente, ou
-                    seja, os trabalhadores recebem seus salários no mês seguinte ao que trabalharam.<br/>
-                    Nesse caso, quando comparamos a referência salarial com o mês de pagamento, sempre haverá um mês de
-                    diferença.
-                    Se você traçar um gráfico da referência salarial, o mês de referência será o mês anterior à data de
-                    pagamento.<br/>
-                    Esses são os FIIS que têm data-base e data de pagamento em meses diferentes.<br/>
-
-                    Portanto, ao observar o gráfico de dividendos e yield, leve em consideração que esses valores estão
-                    relacionados ao mês do contracheque.<br/>
-                    Quando você analisar os valores no extrato, tenha em mente que eles estão relacionados ao mês em que
-                    o salário foi depositado na conta.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="divider-gray"></div>
-<div class="container-sm px-4 py-2 align-top" id="subscription">
-    <h3 class="pb-2 border-bottom">Subscrição</h3>
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                A subscrição em fundos imobiliários é a oportunidade de adquirir novas cotas do fundo, geralmente por
-                meio de uma oferta pública,
-                permitindo aos investidores aumentar sua participação no fundo e potencialmente obter benefícios
-                proporcionais aos rendimentos gerados pelos ativos imobiliários da carteira.<br/>
-                Quando um FII anuncia subscrição a App FIIS irá mostrar um calendário ao lado do ticket na tela
-                principal:<br/>
-                <img alt="Subscrição ícone" class="img-thumbnail img-fluid" src="./appimg/subscricao_calendar_1.png"
-                     style="margin-top: 5px;"><br/>
-
-                Ao selecionar o FII mais detalhes serão exibidos na janelha referente a subscrição, que somente é
-                apresentada quando um FII está com subscrição em andamento:<br/>
-                <img alt="Subscrição detalhes" class="img-thumbnail img-fluid" src="./appimg/subscricao_detalhes.png"
-                     style="margin-top: 5px;"><br/>
-            </p>
-            <p class="text-muted align-top">
-                <b>Data Base:</b> é o dia estabelecido pela administradora do fundo como referência para determinar
-                quais investidores têm direito a participar da subscrição.<br/>
-                Geralmente, serve como base para verificar quem são os cotistas elegíveis para adquirir as novas cotas
-                do fundo por meio da subscrição conforme as condições estabelecidas pela administração do fundo.<br/>
-            </p>
-
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top">
-            <p class="text-muted align-top">
-                <b>Período de Preferência:</b> é o período de tempo durante o qual os cotistas existentes têm a
-                prioridade de adquirir as novas cotas emitidas pelo fundo antes que elas sejam oferecidas a outros
-                investidores.<br/>
-                Durante esse período, os cotistas têm a oportunidade de exercer seu direito de preferência e comprar as
-                cotas adicionais de acordo com a proporção estabelecida.<br/>
-                Caso você tenha interesse em participar da subscrição, é durante esse período que você deve entrar em
-                contato com sua corretora.<br/>
-                <b>Valor e Fator:</b> o valor é o preço de cada nova cota que está sendo oferecida durante a subscrição.<br/>O
-                fator é um coeficiente utilizado para determinar a quantidade de novas cotas que cada investidor tem
-                direito a adquirir durante a subscrição.<br/>
-                <b>Data Limite:</b> é o prazo final estabelecido pela administradora do fundo para que os investidores
-                manifestem o interesse em participar da subscrição e adquirir as novas cotas.<br/>
-            </p>
-            <p class="text-muted align-top" style="background-color: yellow; padding: 10px; border-radius: 10px;">
-                <b>É importante não deixar para informar à corretora sobre seu interesse na subscrição na data limite.
-                    Geralmente, é nesse momento que as corretoras enviam o dinheiro arrecadado para os fundos, e pode
-                    não haver tempo suficiente para realizar a subscrição.</b>
-            </p>
-
-            <p class="text-muted align-top">
-                <b>Notificações</b><br/>
-                Ao habilitar as notificações de subscrições na App FIIS, você receberá uma notificação sempre que uma
-                nova subscrição for anunciada pelo FII que você possui em sua carteira.</br>
-                <img alt="Subscrição detalhes" class="img-thumbnail img-fluid"
-                     src="./appimg/subscricao_notificacao_2.png" style="margin-top: 5px;"><br/> <br/>
-                É importante compreender que, caso você tenha interesse em adquirir cotas por meio da subscrição, é
-                necessário entrar em contato com a corretora para obter informações sobre como proceder.
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="divider-gray"></div>
-<div class="container-sm px-4 py-2 align-top" id="calendar">
-    <h3 class="pb-2 border-bottom">Calendário</h3>
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                A App FIIS pode colocar no seu calendário pessoal os eventos de recebimento de dividendos. <br/>
-                No menu lateral da App, selecione Calendário e ative a função:<br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/calendario_tela_ativado.png"
-                     style="margin-top: 5px;">
-                O dispositivo irá pedir sua confirmação para liberar o acesso ao calendário, confirme para que a App
-                FIIS possa criar os eventos no mesmo.<br/>
-                Para ter informações detalhadas de configuração toque na <i class="fa-solid fa-question"
-                                                                            style="color: black;"></i>
-                <i>(interrogação)</i>.
-            </p>
-            <p class="text-muted align-top">
-                Após a configuração, seu calendário apresentará os próximos recebimentos de dividendos:<br/>
-                <img alt="Primeiro Acesso" class="img-thumbnail img-fluid" src="./appimg/calendario_ex.png"
-                     style="margin-top: 5px;">
-
-            </p>
-
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top">
-            <p class="text-muted align-top">
-                <b>Resolução de problemas.</b>
-                <br/>
-                Caso seu calendário não apresente os próximos dividendos:
-            <ol type="1">
-                <li>Verifique se possui dividendos a receber. A funcionalidade somente cria eventos futuros, dividendos
-                    já recebidos não são incluídos no calendário.
-                </li>
-                <li>Verifique se o IOS não está bloqueando a App FIIS de acessar o calendário.<br/>
-                    Em Ajustes <img alt="Panorama" class="rounded " src="./appimg/gear.png" width="28" height="28">
-                    Selecione a App FIIS no menu lateral esquerdo e verifique:<br/>
-                    <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/calendario_setup.png">
-                </li>
-            </ol>
-
-            </p>
-        </div>
-    </div>
-</div>
-"
-
-<div class="divider-gray"></div>
-<div class="container-sm px-4 py-2 align-top" id="notifications">
-    <h3 class="pb-2 border-bottom">Notificações</h3>
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                A Apple não garante a entrega absoluta de notificações no iOS, mas a taxa de entrega é geralmente alta,
-                estimada em mais de 90%.
-                A entrega pode variar devido a fatores como conectividade, configurações do dispositivo e otimização de
-                energia.
-            </p>
-            <p class="text-muted align-top">
-                Para receber notificações sobre subscrições e dividendos, acesse o aplicativo FIIS e selecione a opção
-                <b>Notificações</b> no menu lateral:<br/>
-                <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/notificacoes_menu.png"
-                     style="margin: 5px 0 5px 0"><br/>
-                Ao instalar o aplicativo FIIS em seu dispositivo, é necessário autorizar as notificações. Para fazer
-                isso, selecione a primeira opção para permitir a sua liberação:<br/>
-                <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/notificacoes_ativar.png"
-                     style="margin: 5px 0 5px 0"><br/>
-                Ao selecionar o dispositivo, você será solicitado a autorizar o recebimento de notificações da App FIIS.
-                Por favor, confirme a autorização para que a App FIIS possa enviar as notificações.<br/>
-            </p>
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top">
-            <p class="text-muted align-top">
-                Após a confirmação, você pode configurar suas preferências de recebimento conforme desejado:<br/>
-                <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/notificacoes_1.png"
-                     style="margin: 5px 0 5px 0"><br/>
-                <b>Modo Silencioso</b> você receberá notificações sem o som clássico do iOS.<br/>
-                <b>Horário</b> para receber as notificações da App FIIS, lembrando que podem chegar alguns minutos após
-                o horário selecionado.<br/>
-                <b>Dividendos</b> defina se deseja receber notificações de dividendos.<br/>
-                <b>Subscrições</b> defina se deseja receber notificações de subscrições.<br/><br/>
-                Toque nos símbolos de interrogação "<i class="fas fa-question"></i></i>" na tela para obter mais
-                informações e detalhes adicionais.
-            </p>
-        </div>
-    </div>
-</div>
-"
-
-<div class="divider-gray"></div>
-<div class="container-sm px-4 py-2 align-top" id="recommended_doc">
-    <div class="container-title">
-        <h3 class="pb-2 border-bottom">Carteira Recomendada</h3>
-        <span class="version">Versão 2.0.0</span>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                Esta funcionalidade permite ao usuário cadastrar até três carteiras recomendadas, que podem ser
-                personalizadas conforme a sua estratégia de investimentos.<br/>
-                Por exemplo, as carteiras podem representar diferentes níveis de risco e retorno, como Conservador,
-                Moderado e Agressivo, mas os nomes podem ser alterados de acordo com a preferência do usuário.
-            </p>
-            <p class="text-muted align-top">
-                Para acessar a tela de cadastro das carteiras recomendadas, utilize o menu lateral da App. Selecione a
-                opção Recomendação dentro da seção Mais FIIS.<br/>
-                <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/v2/recomendada/menu_rec.png"
-                     style="margin: 5px 0 5px 0"><br/>
-            </p>
-
-            <p class="text-muted align-top">
-                Ao acessar essa tela, você poderá adicionar uma nova carteira recomendada clicando no ícone <b>+</b> no
-                canto superior direito da tela.<br/>
-                <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/v2/recomendada/add_rec.png"
-                     style="margin: 5px 0 5px 0" /><br/><br/>
-                <b>Tela de Cadastro de Recomendação</b><br/>
-                <img alt="Menu Notificações" class="img-thumbnail img-fluid" src="./appimg/v2/recomendada/rec_add_n.png"
-                     style="margin: 5px 0 5px 0" /><br/>
-            </p>
-                <ol class="text-muted align-top">
-                    <li><strong>Código do FII</strong>: Informe o código do Fundo de Investimento Imobiliário (FII) que
-                        deseja adicionar à carteira.
-                    </li>
-                    <li><strong>Seleção da Carteira</strong>: Selecione em qual das três carteiras recomendadas o FII será
-                        adicionado. Os nomes padrão são Conservador, Moderado, e Agressivo, mas podem ser alterados.
-                    </li>
-                    <li><strong>Valor Recomendado</strong>: Informe o valor-limite recomendado para a compra, ou deixe R$
-                        0,00 se não houver um limite.
-                    </li>
-                    <li><strong>Peso na Carteira</strong>: Defina o peso que o FII terá na carteira selecionada. Caso a soma
-                        de todos os pesos da carteira seja 100%, a App exibirá apenas a participação, pois ela será
-                        equivalente ao peso.
-                    </li>
-                </ol>
-
-            <p class="text-muted align-top">
-                <b>Renomeando as Carteiras Recomendadas</b><br/>
-                Na tela de Recomendação, toque no ícone de carteira no menu superior direito, conforme mostrado na
-                imagem abaixo:<br/>
-                <img alt="Menu Notificações" class="img-thumbnail img-fluid"
-                     src="./appimg/v2/recomendada/rec_renomear_menu.png"
-                     style="margin: 5px 0 5px 0"><br/>
-
-                Uma nova tela será apresentada, onde você poderá editar os nomes das três carteiras recomendadas. Os
-                nomes podem ter entre 3 e 12 caracteres.<br/>
-
-                Após escolher os novos nomes, basta confirmar para salvar as alterações.
-            </p>
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top">
-
-
-                <p class="text-muted align-top">
-                    <b>Peso e Participação - Como Funciona</b><br/>
-                    Ao cadastrar um FII em uma carteira, você define um peso para ele. A App FIIS calcula
-                    automaticamente a
-                    participação de cada FII com base nos pesos informados.<br/>
-                    Primeiro FII: Quando você cadastra o primeiro FII em uma carteira, sua participação será de 100%,
-                    independentemente do peso informado.<br/>
-                    Segundo FII e seguintes: Ao adicionar mais FIIs, a App FIIS recalcula a participação de cada um. Por
-                    exemplo, se dois FIIs têm o mesmo peso (por exemplo, 10), a participação de cada um será de 50%. Se
-                    um
-                    FII tem peso 20 e outro 10, suas participações serão aproximadamente 66% e 33%,
-                    respectivamente.<br/>
-                    Conforme você adiciona mais FIIs, a App FIIS ajusta a participação de cada um de acordo com o peso
-                    total.<br/>
-                    <img alt="Menu Notificações" class="img-thumbnail img-fluid"
-                         src="./appimg/v2/recomendada/particip_calc.png"
-                         style="margin: 5px 0 5px 0"><br/>
-                    <b>Quando o peso total é 100%:</b><br/>
-                    Se o somatório dos pesos dos FIIs na carteira for igual a 100%, a
-                    participação será igual ao peso. Nesse caso, a App FIIS exibe apenas a participação, pois ela
-                    reflete
-                    diretamente o peso de cada FII.<br/>
-                    <img alt="Menu Notificações" class="img-thumbnail img-fluid"
-                         src="./appimg/v2/recomendada/particip_100.png"
-                         style="margin: 5px 0 5px 0"><br/>
-                </p>
-
-                <p class="text-muted align-top">
-                    <b>Yield das Carteiras Recomendadas</b><br/>
-                    Com base na participação de cada FII cadastrado em uma carteira recomendada, a App FIIS calcula a
-                    média de yield da carteira nos últimos 6 meses. O resultado é apresentado em gráficos, como mostrado
-                    abaixo:<br/>
-                </p>
-                    <!-- Carousel -->
-                <div id="carouselYield" class="carousel slide" data-bs-interval="false"
-                     style="overflow: hidden;">
-                    <div class="carousel-inner" style="max-width: 500px;">
-                        <div class="carousel-item active">
-                            <div style="display: flex; justify-content: center; align-items: center;">
-                                <img src="./appimg/v2/recomendada/yield_rec_1.png"
-                                     class="d-block img-fluid img-thumbnail"
-                                     alt="Yield Conservador"
-                                     style="object-fit: contain;">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div style="display: flex; justify-content: center; align-items: center;">
-                                <img src="./appimg/v2/recomendada/yield_rec_2.png"
-                                     class="d-block img-fluid img-thumbnail"
-                                     alt="Yield Moderado"
-                                     style="object-fit: contain;">
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div style="display: flex; justify-content: center; align-items: center;">
-                                <img src="./appimg/v2/recomendada/yield_rec_3.png"
-                                     class="d-block img-fluid img-thumbnail"
-                                     alt="Yield Agressivo"
-                                     style="object-fit: contain;">
-                            </div>
-                        </div>
+                    <p class="version">Manual para iPhone e iPad · Versão 4.0.0</p>
+                    <h1 id="titulo">Ajuda App FIIS</h1>
+                    <p class="intro-description">Cadastre suas transações, acompanhe a carteira e encontre as opções de exibição, conta e alertas.</p>
+                    <div class="quick-links">
+                        <a class="quick-link primary" href="#first_access">Cadastrar o primeiro FII <span aria-hidden="true">↓</span></a>
+                        <a class="quick-link secondary" href="#recuperar-dados">Recuperar minha carteira <span aria-hidden="true">↓</span></a>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselYield"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselYield"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Próximo</span>
-                    </button>
                 </div>
-                Por exemplo, um FII com um yield alto e uma participação elevada na carteira aumentará o yield total
-                da carteira recomendada, enquanto um FII com uma participação menor terá um impacto reduzido.
+                <img class="intro-shot" src="appimg/v4/carteira.webp" width="368" height="800" alt="Tela inicial com o resumo da carteira e a lista de FIIs." fetchpriority="high">
+            </div>
+        </section>
 
-                <p class="text-muted align-top">
-                    <b>Distribuição por Segmento das Carteiras Recomendadas</b><br/>
-                    Quando você cadastra uma carteira recomendada, a App FIIS calcula e exibe a distribuição da carteira
-                    por
-                    segmento, como mostrado abaixo:<br/>
-                </p>
-                    <!-- Carousel -->
-                <div id="carouselDist" class="carousel slide" data-bs-interval="false">
-                <div class="carousel-inner" style="max-width: 500px;">
-                        <div class="carousel-item active">
-                            <img src="./appimg/v2/recomendada/dist_rec_1.png"
-                                 class="d-block w-100 img-thumbnail img-fluid" alt="Distribuição Conservador">
+        <div class="shell manual-layout">
+            <nav class="topics" id="menupage" aria-labelledby="topicos">
+                <h2 id="topicos">Tópicos</h2>
+                <div class="topic-groups">
+                    <details open>
+                        <summary>Primeiros passos e carteira</summary>
+                        <ul>
+                            <li><a href="#first_access">Primeiro FII</a></li>
+                            <li><a href="#menus_app">Menu lateral e ações dos FIIs</a></li>
+                            <li><a href="#info_windows">Painéis da carteira e dos FIIs</a></li>
+                            <li><a href="#interact_app">Gráficos, extratos e exportação</a></li>
+                            <li><a href="#landscape">Visão</a></li>
+                            <li><a href="#order_table">Ordenação</a></li>
+                            <li><a href="#layout-info">iPhone e iPad</a></li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Lista FIIS e recomendações</summary>
+                        <ul>
+                            <li><a href="#catalogo">Lista FIIS</a></li>
+                            <li><a href="#recommended_doc">Carteiras recomendadas</a></li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Dividendos e eventos dos FIIs</summary>
+                        <ul>
+                            <li><a href="#dt_bs_dt_pg">Data-base e data de pagamento</a></li>
+                            <li><a href="#subscription">Subscrição</a></li>
+                            <li><a href="#renamed_ticket">Mudança de código</a></li>
+                            <li><a href="#split_app">Agrupamento e desdobramento</a></li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary>Conta, alertas e suporte</summary>
+                        <ul>
+                            <li><a href="#login-info">Login, recuperação e Face/Touch ID</a></li>
+                            <li><a href="#notifications">Notificações</a></li>
+                            <li><a href="#calendar">Calendário</a></li>
+                            <li><a href="#buy_app">Cadastro ilimitado</a></li>
+                            <li><a href="#remove_app">Sobre e solução de problemas</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </nav>
+
+            <article class="chapters" aria-label="Manual do App FIIS">
+                <section class="chapter" id="first_access">
+                    <h2>Cadastre seu primeiro FII</h2>
+                    <div class="with-shot">
+                        <div>
+                            <p>Na primeira abertura, toque em <strong>Começar sem conta</strong> para montar uma carteira nova. Se você já usava o app, escolha <a href="#recuperar-dados">Recuperar meus dados</a>.</p>
+                            <ol>
+                                <li>Na carteira, toque em <strong>+</strong> para abrir <strong>Cadastro de Transação</strong>.</li>
+                                <li>Informe o <strong>Código do FII</strong> e selecione <strong>Compra</strong> ou <strong>Venda</strong>.</li>
+                                <li>Informe o <strong>Valor Unitário</strong>, a <strong>Quantidade</strong> de cotas e a <strong>Data da transação</strong>.</li>
+                                <li>Toque em <strong>Salvar</strong>, abaixo da data, e aguarde a confirmação.</li>
+                            </ol>
+                            <p>Use a ajuda (<strong>?</strong>) ao lado dos campos se tiver dúvidas. A data e a quantidade registradas entram no cálculo do histórico e dos dividendos. Um lançamento de venda precisa respeitar o saldo de cotas em todo o histórico.</p>
                         </div>
-                        <div class="carousel-item">
-                            <img src="./appimg/v2/recomendada/dist_rec_2.png"
-                                 class="d-block w-100 img-thumbnail img-fluid" alt="Distribuição Moderado"
-                                 >
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./appimg/v2/recomendada/dist_rec_3.png"
-                                 class="d-block w-100 img-thumbnail img-fluid" alt="Distribuição Agressivo"
-                                 >
-                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/transacao.webp" width="368" height="800" alt="Cadastro de Transação com código do FII, operação, valor unitário, quantidade, data e botão Salvar." loading="lazy" decoding="async">
+                            <figcaption>Cadastro de Transação</figcaption>
+                        </figure>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselDist"
-                            data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselDist"
-                            data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Próximo</span>
-                    </button>
-                </div>
+                </section>
 
-                <p>
-                    <b>Distribuição dos FIIs nas Carteiras Recomendadas</b><br/>
-                    Quando você cadastra uma ou mais carteiras recomendadas, a App FIIS exibe este gráfico, que mostra
-                    como os FIIs que você possui estão distribuídos dentro das suas carteiras recomendadas.<br/>
-                    <img src="./appimg/v2/recomendada/dist_rec_gen.png"
-                         class="d-block img-fluid img-thumbnail"
-                         alt="Distribuição dos FIIs nas Carteiras Recomendadas"
-                         style="width: 500px; object-fit: contain;">
-                </p>
+                <section class="chapter" id="menus_app">
+                    <h2>Menu lateral e ações dos FIIs</h2>
+                    <div class="with-shot">
+                        <div>
+                            <p>Abra o <strong>Menu</strong> no canto superior esquerdo da carteira. Algumas opções aparecem conforme você cadastra FIIs, carrega dados ou libera o cadastro ilimitado.</p>
+                            <dl class="menu-map">
+                                <dt>Exibição</dt>
+                                <dd><a href="#landscape">Selecionar Visão</a> e <a href="#order_table">Selecionar Ordenação</a>.</dd>
+                                <dt>Mais FIIS</dt>
+                                <dd><a href="#recommended_doc">Recomendação</a>, <a href="#catalogo">Lista FIIS</a> e <a href="#interact_app">Excel App FIIS</a>.</dd>
+                                <dt>Shopping</dt>
+                                <dd><a href="#buy_app">Cadastro Ilimitado e Restaurar Compra</a>.</dd>
+                                <dt>Configuração</dt>
+                                <dd><a href="#notifications">Notificações</a>, <a href="#calendar">Calendário</a>, <a href="#bloqueio">Face/Touch ID</a> e <a href="#login-info">login</a>. <strong>Atualizar</strong> aparece quando há uma nova versão disponível.</dd>
+                                <dt>Compartilhar</dt>
+                                <dd>Envie a imagem da <strong>Carteira</strong> ou o <strong>Link App FIIS</strong> pelo menu de compartilhamento do iOS.</dd>
+                                <dt>Suporte</dt>
+                                <dd><strong>Ajuda App FIIS</strong> abre este manual. <a href="#sobre">Sobre App FIIS</a> reúne versão, política de privacidade e contato.</dd>
+                            </dl>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/menu.webp" width="368" height="800" alt="Menu lateral aberto sobre a carteira, com opções de Exibição, Mais FIIS e Configuração." loading="lazy" decoding="async">
+                            <figcaption>Menu lateral da carteira</figcaption>
+                        </figure>
+                    </div>
+                    <h3>Opções de um FII ou de uma transação</h3>
+                    <p>Na carteira, deslize o cartão de um FII para o lado para revelar ações. Quando o cartão mostrar o botão de mais opções (<strong>…</strong>), você também pode tocá-lo. Use <strong>Incluir</strong> para registrar uma transação e <strong>Divid.</strong> para abrir o extrato do fundo. Ações de mudança de código e ajuste de cotas aparecem quando há um evento disponível.</p>
+                    <p>Toque no código do FII para abrir o detalhe. Use <strong>Alterar Segmento</strong> no topo para mudar a classificação do fundo. Na lista de transações, deslize uma linha para ver as ações de editar ou remover. Confira o registro na tela de confirmação antes de excluir.</p>
+                </section>
 
+                <section class="chapter" id="info_windows">
+                    <h2>Painéis da carteira e dos FIIs</h2>
+                    <div class="with-shot">
+                        <div>
+                            <p>Na área de resumo da carteira, deslize o painel para os lados ou use os pontos de navegação. Você pode acompanhar rentabilização, evolução, remuneração, yield, dividendos, distribuição e transações.</p>
+                            <p>Abra um FII para consultar os painéis da posição individual, como cotações, extrato, últimos dividendos e informações do fundo. Quando houver uma oferta cadastrada, o detalhe também pode mostrar <a href="#subscription">Subscrição</a>.</p>
+                            <p>Toque em <strong>?</strong> no painel para entender os valores e controles daquela visão. Os gráficos e listas têm rolagem própria quando o conteúdo ultrapassa a área visível.</p>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/detalhe-fii.webp" width="368" height="800" alt="Detalhe de um FII com painel da posição, navegação entre painéis e histórico de transações." loading="lazy" decoding="async">
+                            <figcaption>Posição e transações de um FII</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="chapter" id="interact_app">
+                    <h2>Gráficos, extratos e exportação</h2>
+                    <ul>
+                        <li><strong>Extrato e últimos dividendos.</strong> Role o conteúdo da lista para consultar as datas e os valores disponíveis. O extrato usa as datas de pagamento.</li>
+                        <li><strong>Transações.</strong> Acompanhe compras e vendas dos últimos 12 meses na carteira. Para consultar os seus lançamentos de um FII, abra o detalhe e role a lista de transações.</li>
+                        <li><strong>Yield e YoC.</strong> Quando o gráfico mostrar as duas opções na legenda, toque na série que deseja ver. Yield acompanha a base de cotação. YoC (<i>Yield on Cost</i>) usa o custo da posição.</li>
+                        <li><strong>Distribuição.</strong> Use o gráfico e a legenda para relacionar os setores às participações dos FIIs ou segmentos.</li>
+                    </ul>
+                    <p>Para exportar os dados, abra <strong>Menu → Mais FIIS → Excel App FIIS</strong>. Use as planilhas de Extrato e Transações para consultar o histórico disponível fora do app.</p>
+                </section>
+
+                <section class="chapter" id="landscape">
+                    <h2>Exibição · Visão</h2>
+                    <div class="with-shot">
+                        <div>
+                            <p>Abra <strong>Menu → Exibição → Selecionar Visão</strong>, escolha uma opção e toque em <strong>Salvar</strong>. O botão <strong>?</strong> abre os detalhes de cada opção.</p>
+                            <dl>
+                                <dt>Dividendo Yield</dt>
+                                <dd>Exibe o último dividendo, valores acumulados e o gráfico de yield do FII.</dd>
+                                <dt>Rentabilidade</dt>
+                                <dd>Exibe investimento, preço médio, comparação com a cotação e histórico de preços.</dd>
+                                <dt>Recomendados</dt>
+                                <dd>Compara a participação real com a participação e a cotação definidas nas carteiras de referência.</dd>
+                                <dt>Gráfico Yield</dt>
+                                <dd>Prioriza o gráfico histórico. No iPad em tela ampla, use o gráfico da visão Dividendo Yield.</dd>
+                                <dt>Compacta</dt>
+                                <dd>Mostra mais FIIs na tela. Toque no código de um FII para abrir as informações completas.</dd>
+                            </dl>
+                            <p>Para mudar apenas um cartão, toque no controle de visão ao lado do código daquele FII.</p>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/visao.webp" width="368" height="800" alt="Seletor de visão com Dividendo Yield, Rentabilidade, Recomendados, Gráfico Yield e Compacta." loading="lazy" decoding="async">
+                            <figcaption>Selecionar Visão no iPhone</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="chapter" id="order_table">
+                    <h2>Exibição · Ordenação</h2>
+                    <div class="with-shot">
+                        <div>
+                            <p>Abra <strong>Menu → Exibição → Selecionar Ordenação</strong> e toque em <strong>Salvar</strong> após escolher.</p>
+                            <dl>
+                                <dt>Ordem FIIS</dt><dd>Organiza por código de negociação, de A a Z.</dd>
+                                <dt>Ordem Segmento</dt><dd>Agrupa os FIIs por segmento.</dd>
+                                <dt>Ordem Dividendos</dt><dd>Agrupa os FIIs pela data de pagamento dos dividendos.</dd>
+                                <dt>Ordem Rentabilidade</dt><dd>Ordena pelo resultado percentual da posição, do menor para o maior.</dd>
+                                <dt>Ordem Recomendados</dt><dd>Agrupa por carteira recomendada e mostra os demais em <strong>Sem Recomendação</strong>.</dd>
+                            </dl>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/ordenacao.webp" width="368" height="800" alt="Seletor de ordenação com as opções FIIs, Segmento, Dividendos, Rentabilidade e Recomendados." loading="lazy" decoding="async">
+                            <figcaption>Selecionar Ordenação</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="chapter" id="layout-info">
+                    <h2>Carteira no iPhone e no iPad</h2>
+                    <p>No iPhone, o resumo e a lista compartilham a tela. No iPad com espaço suficiente, os painéis e a lista podem aparecer lado a lado. A orientação e o espaço disponível determinam quanto conteúdo cabe em cada painel.</p>
+                    <figure class="shot wide-shot">
+                        <img src="appimg/v4/carteira-ipad.webp" width="1400" height="973" alt="Carteira no iPad com a lista de FIIs e painéis organizados para uma tela ampla." loading="lazy" decoding="async">
+                        <figcaption>Carteira no iPad</figcaption>
+                    </figure>
+                </section>
+
+                <section class="chapter" id="catalogo">
+                    <h2>Lista FIIS</h2>
+                    <div class="with-shot">
+                        <div>
+                            <p>Abra <strong>Menu → Mais FIIS → Lista FIIS</strong> para pesquisar fundos pelo código, navegar por segmentos e consultar o histórico disponível.</p>
+                            <ol>
+                                <li>Encontre o fundo pela busca ou na lista.</li>
+                                <li>Veja os gráficos de dividendos e cotações no próprio cartão. Toque na estrela para adicionar o fundo aos favoritos e use o filtro de favoritos no topo da tela.</li>
+                                <li>Use o botão de comparação no cartão para colocar o FII na primeira ou na segunda série do gráfico. Ajuste o intervalo quando o histórico estiver disponível.</li>
+                            </ol>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/lista-fiis.webp" width="650" height="1413" alt="Lista FIIS com gráfico de comparação, busca e lista de fundos." loading="lazy" decoding="async">
+                            <figcaption>Lista FIIS</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="chapter" id="recommended_doc">
+                    <h2>Carteiras recomendadas</h2>
+                    <div class="with-shot">
+                        <div>
+                            <p>Abra <strong>Menu → Mais FIIS → Recomendação</strong>. Você pode montar até três carteiras de referência, chamadas inicialmente <strong>Conservador</strong>, <strong>Moderado</strong> e <strong>Agressivo</strong>. Para renomeá-las, use a opção de edição dos nomes na tela de Recomendação. Os nomes têm de 3 a 15 caracteres.</p>
+                            <ol>
+                                <li>Toque em <strong>+</strong>, informe o código do FII e escolha a carteira de referência.</li>
+                                <li>Preencha a cotação recomendada. Use <strong>R$ 0,00</strong> quando não definir preço de referência.</li>
+                                <li>Defina o peso do FII e salve. Para editar uma recomendação ou movê-la entre carteiras, abra o FII na lista de recomendações.</li>
+                            </ol>
+                            <p>A participação é o peso do FII dividido pela soma dos pesos da carteira. Se os pesos forem 20 e 10, as participações serão aproximadamente 67% e 33%. Os gráficos usam essas participações para mostrar o yield da carteira e a distribuição por segmento.</p>
+                            <p>Na carteira principal, use a visão <strong>Recomendados</strong> para comparar sua alocação com a referência.</p>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/recomendacao.webp" width="650" height="1413" alt="Carteiras recomendadas com seletores de carteira, gráfico e registros de FIIs." loading="lazy" decoding="async">
+                            <figcaption>Recomendação</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="chapter" id="dt_bs_dt_pg">
+                    <h2>Data-base e data de pagamento</h2>
+                    <p>A <strong>data-base</strong>, também chamada de data-com, determina quais cotas dão direito ao dividendo. A <strong>data de pagamento</strong> é quando o fundo paga o valor declarado.</p>
+                    <div class="example">
+                        <h3>Exemplo com datas em meses diferentes</h3>
+                        <dl class="date-example">
+                            <div><dt>28/02 · Data-base</dt><dd>As cotas que você tinha nessa data determinam o direito ao dividendo.</dd></div>
+                            <div><dt>14/03 · Pagamento</dt><dd>O valor aparece em março no extrato. O gráfico por data-base o atribui a fevereiro.</dd></div>
+                        </dl>
+                    </div>
+                    <p>Se vender depois da data-base, você continua com direito ao dividendo declarado para aquelas cotas. Os totais do mês nos gráficos podem mudar à medida que os fundos anunciam novos dividendos.</p>
+                </section>
+
+                <section class="chapter" id="subscription">
+                    <h2>Subscrição</h2>
+                    <div class="with-shot">
+                        <div>
+                            <p>Quando há uma subscrição cadastrada para um dos seus fundos, um ícone sinaliza a oferta na carteira. Abra o FII e navegue até o painel <strong>Subscrição</strong> para consultar os detalhes.</p>
+                            <dl>
+                                <dt>Data-base</dt><dd>Data usada para identificar os cotistas com direito de preferência.</dd>
+                                <dt>Período de preferência</dt><dd>Janela em que o cotista pode exercer o direito.</dd>
+                                <dt>Valor e fator</dt><dd>Preço informado por nova cota e proporção usada para calcular a quantidade elegível.</dd>
+                                <dt>Data limite</dt><dd>Prazo informado na oferta. Confira com sua corretora se há um prazo operacional anterior.</dd>
+                            </dl>
+                            <p>Para participar, consulte o comunicado do fundo e siga as instruções da corretora. Você pode ativar os avisos em <a href="#notifications">Notificações</a>.</p>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/subscricao.webp" width="650" height="1413" alt="Painel de subscrição de um FII com datas, preço e fator da oferta." loading="lazy" decoding="async">
+                            <figcaption>Detalhes de uma subscrição</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="chapter" id="renamed_ticket">
+                    <h2>Mudança de código de um FII</h2>
+                    <ol>
+                        <li>Na carteira, localize o FII que indica uma mudança de código.</li>
+                        <li>Abra as ações do cartão e toque em <strong>Renom.</strong> ou na opção de transferência quando o código novo já existir na carteira.</li>
+                        <li>Confira os códigos antigo e novo, confirme e aguarde o resultado. O app transfere os lançamentos do FII para o novo código.</li>
+                    </ol>
+                </section>
+
+                <section class="chapter" id="split_app">
+                    <h2>Agrupamento e desdobramento</h2>
+                    <div class="with-shot">
+                        <div>
+                            <p>Um desdobramento aumenta a quantidade de cotas e reduz o preço unitário na mesma proporção. Um agrupamento faz a operação inversa.</p>
+                            <ol>
+                                <li>Localize um FII com ajuste disponível, abra as ações do cartão e toque em <strong>Ajuste</strong> para abrir <strong>Ajuste de Cotas</strong>.</li>
+                                <li>Selecione o evento e confira o fator, a data limite e a prévia dos valores de cada transação.</li>
+                                <li>Selecione as transações que deseja ajustar, toque em <strong>Ajustar</strong> e aguarde a confirmação.</li>
+                            </ol>
+                            <p>Transações já processadas ficam identificadas. Se o agrupamento gerar uma fração, siga o aviso de revisão manual e confira o tratamento da fração com a corretora antes de editar o lançamento.</p>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/ajuste-cotas.webp" width="650" height="1413" alt="Ajuste de Cotas com evento de agrupamento e prévia dos novos valores das transações." loading="lazy" decoding="async">
+                            <figcaption>Prévia do ajuste antes de aplicar</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="chapter" id="login-info">
+                    <h2>Login e recuperação da carteira</h2>
+                    <div class="with-shot">
+                        <div>
+                            <p>Se começou sem conta, abra <strong>Menu → Configuração → Efetuar Login</strong> e entre com <strong>Apple</strong> ou <strong>Google</strong>. Isso vincula seus FIIs e suas transações à conta que você usará para recuperar os dados. No Login com Apple, você pode escolher <strong>Ocultar Meu E-mail</strong>.</p>
+                            <h3 id="recuperar-dados">Em outro iPhone, iPad ou após reinstalar</h3>
+                            <p>Na primeira abertura, toque em <strong>Recuperar meus dados</strong>. Selecione o mesmo provedor e a mesma conta usados anteriormente. Se já houver outra sessão aberta, entre na tela de login para verificar qual conta está em uso antes de sair.</p>
+                            <h3 id="bloqueio">Face/Touch ID</h3>
+                            <p>Ative <strong>Menu → Configuração → Face/Touch ID</strong> para pedir autenticação do dispositivo ao voltar ao app. O bloqueio protege o acesso neste aparelho. Use o login para recuperar a carteira em outro dispositivo.</p>
+                            <h3>Deletar conta</h3>
+                            <p>Se quiser apagar a conta, use <strong>Deletar Conta</strong> na tela de login, leia a confirmação e acompanhe o andamento. Para trocar de conta, use a opção de sair.</p>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/primeiro-acesso.webp" width="368" height="800" alt="Primeiro acesso do App FIIS com as opções Recuperar meus dados e Começar sem conta." loading="lazy" decoding="async">
+                            <figcaption>Escolha de primeiro acesso</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="chapter" id="notifications">
+                    <h2>Notificações</h2>
+                    <div class="with-shot">
+                        <div>
+                            <ol>
+                                <li>Abra <strong>Menu → Configuração → Notificações</strong>.</li>
+                                <li>Ative as notificações e permita que o App FIIS envie alertas quando o iOS perguntar.</li>
+                                <li>Escolha o horário e quais avisos receber, como <strong>Dividendos</strong> e <strong>Subscrições</strong>. Use o <strong>Modo Silencioso</strong> para receber avisos sem o som.</li>
+                            </ol>
+                            <p>Se as notificações estiverem bloqueadas, revise a permissão do App FIIS nos <strong>Ajustes</strong> do iOS. O horário escolhido é uma preferência. O momento da entrega pode variar conforme as condições do dispositivo.</p>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/notificacoes.webp" width="650" height="1413" alt="Configuração de Notificações com ativação, modo silencioso, horário e tipos de alerta." loading="lazy" decoding="async">
+                            <figcaption>Preferências de notificação</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="chapter" id="calendar">
+                    <h2>Calendário</h2>
+                    <div class="with-shot">
+                        <div>
+                            <p>Abra <strong>Menu → Configuração → Calendário</strong>, ative a integração e conceda a permissão solicitada pelo iOS. O App FIIS cria e atualiza os eventos de pagamentos futuros em um calendário próprio.</p>
+                            <p>Se os eventos não aparecerem, confira se há dividendos futuros na carteira, se o app tem a permissão necessária nos <strong>Ajustes</strong> e se o calendário do App FIIS está visível no app Calendário. A tela de integração informa quando o acesso está bloqueado.</p>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/calendario.webp" width="650" height="1409" alt="Configuração do calendário de dividendos no App FIIS." loading="lazy" decoding="async">
+                            <figcaption>Integração com o Calendário</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="chapter" id="buy_app">
+                    <h2>Cadastro ilimitado</h2>
+                    <p>Ao atingir o limite gratuito de FIIs, o app oferece a liberação de <strong>Cadastro Ilimitado</strong>. É uma compra única pela App Store que também libera o cadastro de mais FIIs nas carteiras recomendadas.</p>
+                    <p>Você pode abrir a oferta em <strong>Menu → Shopping → Cadastro Ilimitado</strong>. Se já comprou, escolha <strong>Restaurar Compra</strong> com a mesma Conta Apple usada na compra.</p>
+                </section>
+
+                <section class="chapter" id="remove_app">
+                    <h2>Sobre e solução de problemas</h2>
+                    <div class="with-shot">
+                        <div>
+                            <h3 id="sobre">Contate o suporte</h3>
+                            <p>Abra <strong>Menu → Suporte → Sobre App FIIS</strong> para conferir a versão, ler a <strong>Política de Privacidade</strong> ou usar <strong>Enviar e-mail</strong>. Ao relatar um problema, indique a tela e o passo em que ele ocorreu.</p>
+                            <h3>Se precisar reinstalar</h3>
+                            <aside class="callout" aria-label="Antes de apagar o app">
+                                <p><strong>Antes de apagar o app, confira se sua carteira está vinculada a uma conta Apple ou Google.</strong> Para vincular, siga os passos de <a href="#login-info">login</a>. Uma carteira anônima pode ficar inacessível após remover o app.</p>
+                            </aside>
+                            <p>No iOS, abra <strong>Ajustes → Geral → Armazenamento</strong>, selecione <strong>App FIIS</strong> e toque em <strong>Apagar App</strong>. Reinstale pela App Store, toque em <strong>Recuperar meus dados</strong> e entre com a mesma conta. Revise também as preferências de notificações e calendário.</p>
+                        </div>
+                        <figure class="shot">
+                            <img src="appimg/v4/sobre.webp" width="368" height="800" alt="Tela Sobre com desenvolvedor, versão, Política de Privacidade e opção de enviar e-mail." loading="lazy" decoding="async">
+                            <figcaption>Sobre App FIIS</figcaption>
+                        </figure>
+                    </div>
+                </section>
+            </article>
         </div>
-    </div>
-</div>
+    </main>
 
-<div class="divider-gray"></div>
-<div class="container-sm px-4 py-2 align-top" id="renamed_ticket">
-    <h3 class="pb-2 border-bottom">FII Renomeado</h3>
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                Algumas vezes, um FII pode ter seu código de negociação alterado, como no caso do FII RDPD11, que passou
-                a ter o código de negociação VVCR11.
-                <br/>
-                A App FIIS, ao identificar que um FII foi renomeado, irá sinalizar e auxiliar na realização dessa
-                alteração na carteira cadastrada, de maneira simples e prática.
-                <br/>
-                Para identificar que um FII foi renomeado, a App irá marcar com um pequeno ícone, conforme ilustrado na
-                figura abaixo:
-                <br/>
-                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/ren1.png" style="margin: 5px;"/>
-            </p>
+    <footer class="site-footer">
+        <div class="shell footer-inner">
+            <p>As telas do manual usam dados de exemplo.</p>
+            <nav aria-label="Links do rodapé">
+                <a id="removeByApp1" href="https://apps.apple.com/br/app/app-fiis/id1522794163">App Store</a>
+                <a href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
+            </nav>
         </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top">
-            <p class="text-muted align-top">
-                Após identificar o ícone no FII, faça um movimento lateral para acessar o menu na tabela principal e
-                selecione a opção "Renomear".
-                <br/>
-                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/ren2.png" style="margin: 5px;"/>
-                Após essa ação, a App solicitará uma confirmação e, em seguida, seu FII terá o novo código atribuído.
-                <br/>
-                Todos os dividendos e cotações que ocorreram no código antigo serão transferidos para o novo código,
-                garantindo que nenhum dividendo seja perdido.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="divider-gray"></div>
-<!-- Table Menu -->
-<div class="container-sm px-4 py-2 align-top" id="split_app" style="min-height:0px !important;">
-    <div class="container-title border-bottom">
-        <h3 class="pb-2">Agrupamento/Desdobramento</h3>
-    </div>
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-
-            <p class="text-muted align-top">
-                <b>Entendendo Eventos de Desdobramento/Agrupamento</b>
-                <br/>
-                Os eventos de desdobramento e agrupamento em Fundos de Investimento Imobiliário (FIIs) ajustam a
-                quantidade de cotas disponíveis sem modificar o patrimônio do fundo.<br/>
-                Essas ações são estratégicas, influenciando tanto a liquidez quanto o preço de mercado das cotas.
-                <br/>
-                <br/>
-                <b>Desdobramento de Cotas</b>
-                <br/>
-                O desdobramento ocorre quando o fundo divide cada cota existente em várias novas cotas, aumentando assim
-                o total de cotas disponíveis.
-                Por exemplo, em um desdobramento de 2 para 1, a quantidade de cotas que cada investidor possui é
-                dobrada, enquanto o valor de mercado total permanece inalterado.
-                Esse processo pode tornar as cotas mais acessíveis e atrair novos investidores.
-                <br/>
-                <br/>
-                <b>Agrupamento de Cotas</b>
-                <br/>
-                O agrupamento, ou "reverse split", consiste na combinação de várias cotas em uma única, reduzindo o
-                número total de cotas.
-                Este procedimento pode aumentar o preço unitário de cada cota no mercado, ajudando o fundo a cumprir
-                regulamentos de preço mínimo ou a melhorar sua imagem perante os investidores.
-            </p>
-            <p class="text-muted align-top">
-                <b>Como Realizar Desdobramentos/Agrupamentos na App FIIS</b><br/>
-                Quando um FII anuncia um ajuste de desdobramento ou agrupamento, este é configurado no servidor da App
-                FIIS. Na tela principal da App, um ícone ao lado do código do FII indica a presença de ajustes (veja a
-                figura abaixo).<br/>
-                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_icon_app.png"><br/><br/>
-                Deslizando lateralmente, você acessa os detalhes dos desdobramentos disponíveis para o FII selecionado.
-                <br/><b>Este recurso só estará disponível se o FII possuir Agrupamento/Desdobramento cadastrado no
-                servidor da App FIIS</b><br/>
-                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_menu_lateral.png"><br/><br/>
-                Na tela de ajustes, a parte superior exibe uma tabela com os ajustes disponíveis, enquanto a parte
-                inferior lista todas as transações registradas para o FII.
-                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_sem_selecao.png"><br/>
-            </p>
-        </div>
-
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top" style="height:100% !important;">
-            <p class="text-muted align-top">
-                Normalmente, você verá apenas um ajuste, a menos que mais de um tenha sido notificado recentemente.<br/>
-                Selecione o ajuste desejado e observe as alterações simuladas na tabela de transações.<br/>
-                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_selecionado.png"><br/>
-                Nesse agrupamento você pode observar, no meio da linha da transação, a quantidade e o valor unitário que
-                será transformado na mesma. Sendo em branco no lado esquerdo da linha os valores horiginais.
-                Transações elegíveis para ajuste terão seus detalhes exibidos em amarelo, indicando que ainda não foram
-                ajustadas.
-                <br/><br/>
-                Ao interagir com uma transação na lista, você tem a opção de selecioná-la ou desselecioná-la para
-                ajuste. Desmarcar uma transação a exclui do processo de aplicação do ajuste, preservando seus valores
-                originais.
-                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_nao_selecionado.png"><br/>
-                <br/>
-                Um texto vermelho alerta para transações que resultariam em uma quantidade inválida de cotas após um
-                agrupamento, necessitando intervenção manual.
-                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_vermelho.png"><br/><br/>
-                <br/>
-                Transações já ajustadas são exibidas em verde com a etiqueta "Processado", indicando que não estão
-                disponíveis para reajuste.
-                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/split_verder.png"><br/><br/>
-            </p>
-
-            <p class="text-muted align-top">
-                <b>Entendendo a Tabela de Ajustes</b>
-            <ul>
-                <li><b>Data Limite:</b> A data máxima para que uma transação seja elegível para ajuste.</li>
-                <li><b>Fator:</b> Determina o recalculo das quantidades de cotas; multiplica-se para desdobramentos e
-                    divide-se para agrupamentos.
-                </li>
-            </ul>
-            <b>Finalizando o Processo</b>
-            Após selecionar as transações, pressione "Aplicar" para concluir as alterações. Aguarde a confirmação de
-            sucesso do processo.<br/>
-            O ícone continuará visível na tela principal por até sete dias após a data limite, mesmo após o
-            processamento de todos os ajustes.
-            </p>
-
-        </div>
-    </div>
-</div>
-
-<div class="divider-gray"></div>
-<div class="container-sm px-4 py-2 align-top" id="buy_app">
-    <h3 class="pb-2 border-bottom">Cadastro Ilimitado</h3>
-    <div class="row row-cols-1 row-cols-md-2 align-items-md-start g-5 py-2 align-top">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                Quando o limite de cadastro de FIIs diferentes é atingido, a App FIIS solicita que seja feita a compra
-                da opção de cadastrar mais FIIs.<br/>
-                Nesse momento, a seguinte imagem é exibida:<br/>
-                <img alt="Panorama" class="img-thumbnail img-fluid" src="./appimg/buy_menu.png"/>
-            </p>
-
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2 align-top">
-            <p class="text-muted align-top">
-                Ao efetuar a compra, você terá acesso ao cadastro ilimitado de FIIs na App FIIS e não receberá cobranças
-                adicionais.<br/>
-            <div class="highlight">Não é assinatura!</div>
-            Essa liberação também se aplica ao cadastro da Carteira Recomendada, permitindo que você adicione quantos
-            FIIs desejar sem restrições.
-            </p>
-            <p class="text-muted align-top">
-                <b>Acesso ilimitado</b>: Com a compra única, você terá acesso ilimitado à App FIIS.<br/>
-                Isso significa que você poderá desfrutar de todas as funcionalidades, atualizações e melhorias contínuas
-                sem nenhuma restrição.
-                <br/><br/>
-                <b>Compra Gerenciada pela Apple</b><br/>
-                Todas as compras feitas por meio da App FIIS, disponível na Apple Store, são gerenciadas pela própria
-                Apple.<br/>
-                Isso significa que você pode confiar na segurança e confiabilidade do processo de compra, bem como na
-                proteção dos seus dados pessoais.<br/>
-                A Apple Store possui um sistema de pagamento seguro e criptografado, que garante a proteção das suas
-                informações financeiras durante o processo de compra.<br/>
-                Além disso, a Apple Store possui políticas rigorosas de privacidade e proteção ao consumidor, garantindo
-                que você tenha uma experiência tranquila e confiável.
-            </p>
-        </div>
-    </div>
-</div>
-
-<div class="divider-gray"></div>
-<div class="container px-4 py-5" id="remove_app">
-    <h3 class="pb-2 border-bottom">Resolvendo Problemas</h3>
-    <div class="row row-cols-1 align-items-md-start g-5 py-2">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                Em algumas situações, podem ocorrer problemas, tais como:
-            <ul>
-                <li>App para de abrir após uma atualização do IOS.</li>
-                <li>App para de abrir após uma atualização da App.</li>
-                <li>A app apresenta problemas de conexão ao utilizar dados móveis, embora a permissão de uso esteja
-                    habilitada no iOS.
-                </li>
-            </ul>
-            Geralmente, esses problemas são causados devido a arquivos de configuração corrompidos durante o processo de
-            atualização da app ou do iOS.<br/>
-            A melhor maneira de resolver isso é apagando completamente a app e reinstalando-a.<br/>
-            </p>
-            <p>
-                <b style="color: red;">Atenção</b><br/>
-                Antes de prosseguir com os próximos passos, certifique-se de estar logado na App FIIS com uma conta da
-                Apple ou Google.<br/>
-                Se não estiver logado em uma dessas contas, não será possível recuperar as transações cadastradas após
-                esse procedimento.<br/>
-                Caso não esteja certo se está logado, por favor, leia o passo a passo de <a class="link-dark"
-                                                                                            href="#login-info"><b>Efetuando
-                Login</b></a> antes de prosseguir.
-            </p>
-            <p>
-                Para apagar a app e todos os arquivos relacionados, siga estas etapas:
-            <ol type="1">
-                <li>Acesse 'Ajustes' no seu dispositivo <img alt="Panorama" class="rounded " src="./appimg/gear.png"
-                                                             width="24" height="24"></li>
-                <li>Toque em 'Geral'</li>
-                <li>Selecione 'Armazenamento' seguido do nome do seu dispositivo. <i>Aguarde o dispositivo carregar as
-                    informações.</i></li>
-                <li>Procure pela App FIIS na lista de apps apresentada na tabela e selecione-a.</li>
-                <li>Toque em 'Apagar App' na tela exibida:<br/><img alt="Panorama" class="img-thumbnail img-fluid"
-                                                                    src="./appimg/remover_app.png"></li>
-            </ol>
-            </p>
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted">
-                <b>Instalando a App novamente:</b>
-            <ol type="1">
-                <li>
-                    <div style="display: inline; white-space: nowrap;">Instale a app através da <a
-                            href="https://apps.apple.com/br/app/app-fiis/id1522794163" target="_blank"
-                            class="link-info">Apple Store</a></div>
-                    .
-                </li>
-                <li>Faça login na mesma conta que você utilizava anteriormente para recuperar as transações.</li>
-                <li>Caso recebesse notificações anteriormente, será necessário habilitá-las novamente. Selecione <b>Notificações</b>
-                    no menu e reconfigure de acordo com as suas preferências.
-                </li>
-                <li>Se você costumava atualizar o calendário com os próximos dividendos, será necessário habilitar essa
-                    função novamente. Selecione <a class="link-secondary" href="#calendar"><b>Calendário</b></a> no menu
-                    e ative novamente.
-                </li>
-            </ol>
-            </p>
-        </div>
-    </div>
-</div>
-
-<!--div class="divider-gray"></div>
-<div class="container px-4 py-5" id="ID-CONTEUDO">
-    <h3 class="pb-2 border-bottom">TITULO</h3>
-
-    <div class="row row-cols-1 align-items-md-start g-5 py-2">
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                CONTEUDO SUPERIOR
-                <i class="fa-solid fa-hand-holding-dollar fa-2xl"></i>
-                <i class="fa-solid fa-circle-up fa-2xl"></i>
-            </p>
-        </div>
-
-        <div class="col d-flex flex-column align-items-start gap-2">
-            <p class="text-muted align-top">
-                CONTEUDO INFERIOR
-
-            <i class="fa-regular fa-circle-down fa-2xl"></i>
-            <i class="fa-solid fa-circle-right fa-2xl" style="color: gold;"></i>
-            </p>
-        </div>
-    </div>
-</div-->
-
-
-<!-- Horizontal img-->
-
-<div class="divider-gray"></div>
-
-<div class="container" id="container-footer">
-    <footer class="py-3 my-4">
-        <p class="fs-6 text-center text-muted" id="fontFWText">
-        </p>
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item" id="removeByApp1"><a href="https://apps.apple.com/br/app/app-fiis/id1522794163"
-                                                      class="nav-link px-5 text-muted"><i
-                    class="fa-brands fa-apple fa-lg"></i> Apple Store</a></li>
-            <li class="nav-item"><a href="https://fontawesome.com" class="nav-link px-5 text-muted"><i
-                    class="fa-solid fa-font-awesome fa-lg"></i> Font Awesome</a></li>
-        </ul>
-        <p class="text-center text-muted" id="removeByApp2">
-            <a href="https://apps.apple.com/br/app/app-fiis/id1522794163" class="nav-link px-5 text-muted">
-                <img alt="Logo" class="img-fluid" src="./logo_64.png" height="32" width="32"> App FIIS
-            </a>
-        </p>
     </footer>
-</div>
-
-<div class="divider-gray" id="removeByApp3"></div>
-</main>
-
-<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript">
-    //<![CDATA[
-    // Get the button:
-    let mybutton = document.getElementById("myBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function () {
-        scrollFunction()
-    };
-
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-
-    //]]>
-</script>
-
 </body>
 </html>
