@@ -231,6 +231,18 @@ h1 { font-size: clamp(2.25rem, 6vw, 4rem); letter-spacing: -.04em; }
 
 .shot.wide-shot { max-inline-size: 39rem; margin-inline-start: 0; }
 
+.subscription-shots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    max-inline-size: 35rem;
+    margin-block-start: 1.25rem;
+}
+
+.subscription-shots .shot { flex: 1 1 14rem; margin: 0; }
+
 .example, .callout {
     max-inline-size: 68ch;
     margin-block: 1rem;
